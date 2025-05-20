@@ -12,8 +12,6 @@ import {
 } from "@nextui-org/navbar";
 import React from "react";
 import Logo from "./Logo";
-import { Button } from "@nextui-org/button";
-import ThemeToggler from "./ThemeToggler";
 
 export interface MenuItem {
   id: string;
@@ -55,7 +53,6 @@ export default function Header() {
         <NavbarBrand className="gap-3">
           <Logo />
         </NavbarBrand>
-        <ThemeToggler />
         {mymenuitems.map((item: MenuItem, index: number) => (
           <NavbarItem key={index}>
             <Link
