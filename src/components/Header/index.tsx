@@ -44,7 +44,6 @@ export default function Header() {
 
       <NavbarContent className="sm:hidden pr-3 gap-y" justify="center">
         <NavbarBrand className="gap-3">
-          <ThemeToggler />
           <Logo />
         </NavbarBrand>
       </NavbarContent>
