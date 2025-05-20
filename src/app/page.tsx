@@ -79,7 +79,7 @@ const FancyTextGenerator: React.FC = () => {
   return (
     <div className="px-7 overflow-hidden">
       <div className="border border-zinc-200 shadow-md bg-transparent p-4 mb-3 rounded-2xl pt-8 gap-2 flex flex-col text-center justify-center">
-        <h1 className="text-3xl md:text-4xl font-normal text-[#7b33f1] text-center">
+        <h1 className="text-3xl md:text-4xl font-normal dark:text-white text-[#7b33f1] text-center">
           Generatore di Caratteri Speciali per Font Eleganti e Formali
         </h1>
 
@@ -271,6 +271,70 @@ const FancyTextGenerator: React.FC = () => {
       </section>
 
       <ToastContainer />
+<section className="bg-white py-12 px-6 text-gray-900 text-base leading-relaxed">
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-2xl font-bold mb-6">Crea testi con caratteri speciali unici e belli</h2>
+
+    <p className="mb-4">
+      Vuoi rendere i tuoi testi più belli, diversi e creativi? Con il nostro generatore di caratteri speciali puoi
+      trasformare semplici frasi in scritte artistiche che puoi usare ovunque: nei tuoi post Instagram, nei messaggi
+      WhatsApp, nei commenti Facebook o anche nei giochi come Fortnite e Brawl Stars.
+    </p>
+
+    <h3 className="text-xl font-semibold mt-6 mb-2">Cosa sono i caratteri speciali?</h3>
+    <p className="mb-4">
+      I caratteri speciali sono simboli che non trovi sulla tastiera normale. Sono lettere o segni particolari presi da
+      un sistema chiamato Unicode. Con questi simboli puoi creare testi diversi, belli, e facili da copiare e incollare.
+      Puoi usarli su molti siti famosi come Instagram, Facebook, YouTube o Discord.
+    </p>
+
+    <h3 className="text-xl font-semibold mt-6 mb-2">Come si usano i caratteri speciali?</h3>
+    <p className="mb-4">
+      È molto semplice. Basta scrivere una frase nel nostro convertitore, e subito vedrai il testo in tanti stili diversi:
+      corsivo, gotico, elegante, scritto a mano o anche stile aesthetic. Ti basta cliccare sullo stile che ti piace e
+      incollarlo dove vuoi.
+    </p>
+    <p className="mb-4">
+      Funziona anche con <strong>caratteri speciali da tastiera</strong>, <strong>caratteri speciali html</strong> e con la
+      <strong>tastiera con caratteri speciali</strong> del tuo telefono o computer.
+    </p>
+
+    <h3 className="text-xl font-semibold mt-6 mb-2">Dove posso usare questi caratteri?</h3>
+    <ul className="list-disc list-inside mb-4">
+      <li>Post di Instagram con <strong>caratteri speciali instagram</strong></li>
+      <li>Messaggi WhatsApp con simboli creativi</li>
+      <li>Bio e commenti su Facebook con <strong>caratteri speciali per facebook</strong></li>
+      <li>Username o nickname nei giochi come Fortnite o Brawl Stars</li>
+      <li>Testi per Word o HTML usando <strong>caratteri speciali in word</strong> o <strong>html caratteri speciali</strong></li>
+    </ul>
+
+    <h3 className="text-xl font-semibold mt-6 mb-2">Perché alcuni caratteri non funzionano?</h3>
+    <p className="mb-4">
+      A volte un sito non mostra bene certi simboli. Questo succede quando il font del sito non supporta tutti i
+      caratteri Unicode. In questi casi, vedrai un quadrato o un punto interrogativo. Non è un errore tuo, ma solo una
+      limitazione del sito dove incolli il testo.
+    </p>
+
+    <h3 className="text-xl font-semibold mt-6 mb-2">Compatibilità e limiti</h3>
+    <p className="mb-4">
+      Alcuni social network, come Facebook o Twitter, bloccano simboli troppo strani per motivi di sicurezza o leggibilità.
+      Ad esempio, i <strong>caratteri speciali glitch</strong> non sempre si vedono bene. Ma puoi sempre provare altri stili
+      cliccando su “Mostra altri caratteri” nel nostro strumento.
+    </p>
+
+    <h3 className="text-xl font-semibold mt-6 mb-2">Un modo semplice per essere unici</h3>
+    <p className="mb-4">
+      Usare <strong>caratteri speciali</strong> ti permette di essere originale. Che sia per un nome su Instagram, un messaggio
+      su WhatsApp o una descrizione su Facebook, i nostri stili ti aiutano a farti notare. Non serve installare nulla,
+      basta solo copiare e incollare!
+    </p>
+
+    <p className="mt-8 text-sm text-gray-500">
+      Prova subito il nostro generatore e divertiti a creare testi belli e creativi con caratteri speciali!
+    </p>
+  </div>
+</section>
+
     </div>
   )
 }
@@ -338,7 +402,13 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
       >
         {isCopied ? "Copiato!" : "Copia"}
       </button>
+
+
+
+
+
     </div>
+    
   )
 }
 
