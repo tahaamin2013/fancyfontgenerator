@@ -8,7 +8,6 @@ import { ToastContainer } from 'react-toastify';
 import siteMetadata from "../utils/siteMetaData";
 const Header = lazy(() => import("@/src/components/Header"));
 const NextThemeProvider = lazy(() => import("@/src/providers/theme-provider"));
-const Loading = lazy(() => import("../providers/loading"));
 
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -60,10 +59,8 @@ export default function RootLayout({
         <NextThemeProvider>
           <Header />
           <Providers>
-              <Loading>
                 {children}
                 <ToastContainer />
-              </Loading>
           </Providers>
         </NextThemeProvider>
       </body>
