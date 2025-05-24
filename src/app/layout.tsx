@@ -3,7 +3,8 @@ import "./globals.css";
 import React, { Suspense, lazy } from "react";
 import { cx } from "@/src/utils";
 import { Providers } from "./providers";
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer } from "react-toastify";
+import { Toaster } from "@/src/components/ui/sonner"
 
 import siteMetadata from "../utils/siteMetaData";
 const Header = lazy(() => import("@/src/components/Header"));
@@ -49,18 +50,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={cx(
-          "font-EuclidCircularB",
-          "font-mr"
-        )}
-      >
+    <html lang="it">
+      <body className={cx("font-EuclidCircularB", "font-mr")}>
         <NextThemeProvider>
           <Header />
           <Providers>
-                {children}
-                <ToastContainer />
+                    <Toaster />
+            {children}
+            <ToastContainer />
           </Providers>
         </NextThemeProvider>
       </body>

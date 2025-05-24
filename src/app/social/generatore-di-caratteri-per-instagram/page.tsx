@@ -4,7 +4,7 @@ import type React from "react"
 import { useState, useEffect, type ChangeEvent } from "react"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-import { Input } from "../components/ui/input"
+import { Input } from "@/src/components/ui/input"
 import { Copy, Sparkles, ChevronDown, Star } from "lucide-react"
 import { motion } from "framer-motion"
 
@@ -31,8 +31,8 @@ import {
   Light_Shade_Block_Font,
   Dark_Text_Bubbles,
   Royal_Bear_Style,
-} from "./data"
-import EmoticonSelector from "../components/Specialchar"
+} from "@/src/app/data"
+import EmoticonSelector from "@/src/components/Specialchar"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -97,7 +97,7 @@ const FancyTextGenerator: React.FC = () => {
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-              Caratteri Speciali per Font Eleganti
+Generatore di caratteri per Instagram
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl bg-bl mx-auto">
               Una collezione di caratteri speciali da tastiera per rendere più elegante il tuo contenuto per qualsiasi
@@ -129,7 +129,7 @@ const FancyTextGenerator: React.FC = () => {
 
                 <div className="mt-4 text-center">
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Scopri i simboli e caratteri speciali per Instagram, Facebook, Fortnite, WhatsApp e molto altro!
+                    Scopri i simboli e caratteri speciali per Instagram!
                   </p>
                 </div>
               </div>
@@ -150,7 +150,7 @@ const FancyTextGenerator: React.FC = () => {
               </div>
               <p className="text-gray-600 dark:text-gray-300 mb-8 pl-14">
                 Usa la nostra collezione di caratteri speciali sulla tastiera per rendere unici i tuoi testi. Perfetti
-                per Instagram, Facebook, WhatsApp, Fortnite, Brawl Stars e molto altro!
+                per Instagram!
               </p>
             </div>
 
@@ -185,192 +185,6 @@ const FancyTextGenerator: React.FC = () => {
             )}
           </motion.div>
       <EmoticonSelector />
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="mt-20 mb-10"
-          >
-            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
-              <div className="p-8">
-                <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">Guida ai Caratteri Speciali</h2>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
-                    <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6 text-purple-600 dark:text-purple-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                      Caratteri Speciali per Social Media
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      I caratteri speciali su Instagram, Facebook e WhatsApp possono rendere il tuo profilo unico e
-                      attirare più follower.
-                    </p>
-                  </div>
-
-                  <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
-                    <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6 text-purple-600 dark:text-purple-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                      Caratteri Speciali nei Giochi
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Personalizza il tuo nome in Fortnite e Brawl Stars con caratteri speciali aesthetic per
-                      distinguerti dagli altri giocatori.
-                    </p>
-                  </div>
-
-                  <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
-                    <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6 text-purple-600 dark:text-purple-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                      Caratteri Speciali in Word
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      Scopri come utilizzare i caratteri speciali di Word per documenti professionali e accademici.
-                    </p>
-                  </div>
-
-                  <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
-                    <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-4">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6 text-purple-600 dark:text-purple-400"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
-                      Simboli e Caratteri Speciali HTML
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      I caratteri speciali HTML sono essenziali per gli sviluppatori web. Usa il nostro strumento per
-                      generarli facilmente.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            className="mt-20 bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden"
-          >
-            <div className="p-8">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
-                Crea testi con caratteri speciali unici e belli
-              </h2>
-
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Vuoi rendere i tuoi testi più belli, diversi e creativi? Con il nostro generatore di caratteri speciali
-                puoi trasformare semplici frasi in scritte artistiche che puoi usare ovunque: nei tuoi post Instagram,
-                nei messaggi WhatsApp, nei commenti Facebook o anche nei giochi come Fortnite e Brawl Stars.
-              </p>
-
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                    Cosa sono i caratteri speciali?
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    I caratteri speciali sono simboli che non trovi sulla tastiera normale. Sono lettere o segni
-                    particolari presi da un sistema chiamato Unicode. Con questi simboli puoi creare testi diversi,
-                    belli, e facili da copiare e incollare. Puoi usarli su molti siti famosi come Instagram, Facebook,
-                    YouTube o Discord.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                    Come si usano i caratteri speciali?
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-3">
-                    È molto semplice. Basta scrivere una frase nel nostro convertitore, e subito vedrai il testo in
-                    tanti stili diversi: corsivo, gotico, elegante, scritto a mano o anche stile aesthetic. Ti basta
-                    cliccare sullo stile che ti piace e incollarlo dove vuoi.
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Funziona anche con <strong>caratteri speciali da tastiera</strong>,{" "}
-                    <strong>caratteri speciali html</strong> e con la
-                    <strong> tastiera con caratteri speciali</strong> del tuo telefono o computer.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                    Dove posso usare questi caratteri?
-                  </h3>
-                  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
-                    <li>
-                      Post di Instagram con <strong>caratteri speciali instagram</strong>
-                    </li>
-                    <li>Messaggi WhatsApp con simboli creativi</li>
-                    <li>
-                      Bio e commenti su Facebook con <strong>caratteri speciali per facebook</strong>
-                    </li>
-                    <li>Username o nickname nei giochi come Fortnite o Brawl Stars</li>
-                    <li>
-                      Testi per Word o HTML usando <strong>caratteri speciali in word</strong> o{" "}
-                      <strong>html caratteri speciali</strong>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
     
       <ToastContainer position="top-right" autoClose={1000} hideProgressBar theme="colored" />

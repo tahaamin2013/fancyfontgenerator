@@ -1,9 +1,9 @@
 // please update required information
 const siteMetadata = {
   title: 'caratteri speciali',
-  author: 'WebKin Solutions',
+  author: 'Devkins',
   description: 'caratteri speciali',
-  language: 'en-us',
+  language: 'it',
   theme: 'system', // system, dark or light
   siteUrl: 'https://vips-combo.vercel.app/', // your website URL
   siteLogo: '/alightmotionlogo.webp',
