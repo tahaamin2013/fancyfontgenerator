@@ -83,7 +83,15 @@ const FancyTextGenerator: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-  
+  <>
+    <head>
+      <title>Generatore di caratteri per Facebook | Caratteri Speciali Online</title>
+      <meta
+        name="description"
+        content="Genera caratteri speciali e font eleganti per Facebook. Copia facilmente caratteri unici per i tuoi post e rendi i tuoi contenuti più accattivanti."
+      />
+    </head>
+  </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

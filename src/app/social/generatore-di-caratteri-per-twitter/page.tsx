@@ -83,7 +83,15 @@ const FancyTextGenerator: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-  
+  <>
+    <head>
+      <title>Generatore di caratteri per Twitter | Caratteri Speciali</title>
+      <meta
+        name="description"
+        content="Generatore di caratteri speciali per Twitter. Crea e copia caratteri unici e simboli per rendere i tuoi tweet più eleganti e originali."
+      />
+    </head>
+  </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

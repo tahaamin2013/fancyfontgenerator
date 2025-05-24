@@ -8,3 +8,7 @@ export default function Home() {
     </main>
   )
 }
+export const metadata = {
+  title: "Generatore di Testo Fantasioso",
+  description: "Crea testi stilizzati e fantasiosi facilmente online.",
+};

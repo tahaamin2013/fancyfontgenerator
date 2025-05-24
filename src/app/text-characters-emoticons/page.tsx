@@ -14,6 +14,15 @@ interface Emoticon {
 export default function EmoticonPage() {
   return (
     <div className="container mx-auto py-8 px-4">
+      <>
+        <head>
+          <title>Emoticon Testuali: Faccine, Kaomoji e Simboli da Copiare</title>
+          <meta
+            name="description"
+            content="Sfoglia e copia facilmente emoticon testuali, faccine, kaomoji e simboli per arricchire le tue conversazioni online e sui social media."
+          />
+        </head>
+      </>
       <h1 className="text-3xl font-bold text-center mb-4">Emoticon Testuali</h1>
       <p className="text-center text-muted-foreground mb-2">
         Sfoglia e copia le tue emoticon testuali preferite da usare nei messaggi e sui social media

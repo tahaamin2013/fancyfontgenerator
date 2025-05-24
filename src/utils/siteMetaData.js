@@ -1,21 +1,36 @@
 // please update required information
 const siteMetadata = {
-  title: 'caratteri speciali',
+  title: 'Generatore di Caratteri Speciali e Lettere in Corsivo - Copia e Incolla',
+  titleTemplate: '%s | Caratteri Speciali',
+  keywords: [
+    'caratteri speciali',
+    'caratteri speciali per Instagram',
+    'caratteri speciali per Facebook',
+    'caratteri speciali per TikTok',
+    'caratteri speciali per WhatsApp',
+    'caratteri speciali per Twitter',
+    'caratteri speciali per YouTube',
+    'caratteri speciali per Pinterest',
+    'caratteri speciali per Snapchat',
+    'generatore di caratteri speciali',
+    'generatore di lettere in corsivo',
+  ],
+  openGraph: {
+    type: 'website',
+    title: 'Generatore di Caratteri Speciali e Lettere in Corsivo - Copia e Incolla',
+    description: 'Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito.',
+    url: 'https://www.caratterispeciali10.it/',
+    siteName: 'Caratteri Speciali',
+   
+  },
+    
   author: 'Devkins',
   description: 'caratteri speciali',
   language: 'it',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://vips-combo.vercel.app/', // your website URL
+  theme: 'light', // system, dark or light
+  siteUrl: 'https://www.caratterispeciali10.it/', // your website URL
   siteLogo: '/alightmotionlogo.webp',
-  socialBanner: '/alightmotionlogo.webp', // add social banner in the public folder
-  email: 'aimahusnain@gmail.com',
-  github: 'https://github.com/aimahusnain',
-  twitter: 'https://twitter.com/aimahusnain',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com/aimahusnain',
-  linkedin: 'https://www.linkedin.com/in/aimahusnain/',
-  dribbble: 'https://www.dribbble.com/aimahusnain',
-  locale: 'en-US',
+  locale: 'it-IT',
 }
 
 module.exports = siteMetadata

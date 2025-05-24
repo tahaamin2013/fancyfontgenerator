@@ -1111,6 +1111,12 @@ const rows2 = [
 export default function UnicodeTable() {
   return (
     <div className="p-4 max-w-full overflow-auto">
+      <>
+        <head>
+          <title>Tabella Unicode</title>
+          <meta name="description" content="Tabella caratteri Unicode: esplora i caratteri e i codici esadecimali." />
+        </head>
+      </>
       <table className="table-auto mt-[40px] border-collapse border border-gray-300 text-center text-sm font-mono">
         <thead>
           <tr>

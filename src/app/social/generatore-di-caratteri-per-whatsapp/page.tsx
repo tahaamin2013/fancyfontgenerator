@@ -83,7 +83,15 @@ const FancyTextGenerator: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-  
+  <>
+    <head>
+      <title>Generatore di caratteri per Whatsapp | Caratteri Speciali Online</title>
+      <meta
+        name="description"
+        content="Genera caratteri speciali per Whatsapp e altri social. Scegli tra oltre 100+ stili di font unici e copia facilmente il testo personalizzato!"
+      />
+    </head>
+  </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

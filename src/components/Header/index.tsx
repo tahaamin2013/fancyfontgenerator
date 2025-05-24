@@ -34,6 +34,8 @@ export const mymenuitems: MenuItem[] = [
   { id: "special-character-table-in-html", label: "HTML Table", path: "/special-character-table-in-html" },
   { id: "special-name", label: "Nomi Speciali", path: "/special-name" },
   { id: "generatore-testo-corsivo", label: "Testo Corsivo", path: "/generatore-testo-corsivo" },
+  { id: "emojis", label: "Emojis", path: "/emojis" },
+  { id: "font-corsivo", label: "Font Corsivo", path: "/font-corsivo" },
 ]
 
 export const dropdownItems = [
