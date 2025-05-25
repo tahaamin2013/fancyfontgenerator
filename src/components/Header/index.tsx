@@ -32,7 +32,7 @@ export const mymenuitems: MenuItem[] = [
   { id: "lista-de-atalhos-do-teclado-para", label: "Scorciatoie Alt Code", path: "/lista-de-atalhos-do-teclado-para" },
   { id: "text-characters-emoticons", label: "Emoticons", path: "/text-characters-emoticons" },
   { id: "special-character-table-in-html", label: "HTML Table", path: "/special-character-table-in-html" },
-  { id: "nome-speciale", label: "Nomi Speciali", path: "/nomi-speciale" },
+  { id: "nomi-speciale", label: "Nomi Speciali", path: "/nomi-speciale" },
   { id: "generatore-testo-corsivo", label: "Testo Corsivo", path: "/generatore-testo-corsivo" },
   { id: "emojis", label: "Emojis", path: "/emojis" },
   { id: "font-corsivo", label: "Font Corsivo", path: "/font-corsivo" },
