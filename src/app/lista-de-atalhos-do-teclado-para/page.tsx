@@ -3,19 +3,20 @@ import { Card } from "@/src/components/ui/card"
 import { Badge } from "@/src/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/src/components/ui/tabs"
 import { Alert, AlertDescription, AlertTitle } from "@/src/components/ui/alert"
-import Head from "next/head"
-
+import { Metadata } from "next"
+export const metadata: Metadata = {
+  title: "Scorciatoie Alt Code - Caratteri Speciali a Portata di Mano",
+  description:
+    "Scopri come usare i codici Alt per digitare caratteri speciali su Windows. Elenco completo di simboli e istruzioni passo passo.",
+  alternates: {
+    canonical: "https://www.caratterispeciali10.it/lista-de-atalhos-do-teclado-para",
+  },
+}
 export default function KeyboardShortcutsPage() {
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
-      <Head>
-        <title>Scorciatoie Alt Code - Caratteri Speciali a Portata di Mano</title>
-        <meta
-          name="description"
-          content="Scopri come usare i codici Alt per digitare caratteri speciali su Windows. Elenco completo di simboli e istruzioni passo passo."
-        />
-        <link rel="canonical" href="https://www.caratterispeciali10.it/lista-de-atalhos-do-teclado-para" />
-      </Head>
+ 
       <header className="bg-purple-800 text-white py-8 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Scorciatoie Alt Code</h1>

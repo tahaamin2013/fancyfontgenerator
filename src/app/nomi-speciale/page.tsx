@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen">
+            <h1 className="sr-only">Decorazioni per Nomi</h1>
+
       <FancyTextGenerator />
     </main>
   );
