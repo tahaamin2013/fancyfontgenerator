@@ -1,6 +1,6 @@
 import "../styles/fonts.css";
 import "./globals.css";
-import React, { Suspense, lazy } from "react";
+import React, { lazy } from "react";
 import { cx } from "@/src/utils";
 import { Providers } from "./providers";
 import { ToastContainer } from "react-toastify";
