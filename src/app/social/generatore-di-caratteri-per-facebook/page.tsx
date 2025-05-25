@@ -92,7 +92,7 @@ const FancyTextGenerator: React.FC = () => {
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="canonical" href="https://caratterispeciali10.it/social/generatore-di-caratteri-per-facebook" />
+      <link rel="canonical" href="https://www.caratterispeciali10.it/social/generatore-di-caratteri-per-facebook" />
     </head>
   </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

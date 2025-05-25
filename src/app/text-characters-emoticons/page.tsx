@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   title: 'Emoticon, Simboli e Caratteri Speciali - caratterispeciali10.it',
   description: 'Scopri una vasta raccolta di emoticon, simboli e caratteri speciali da copiare e incollare facilmente. Perfetto per arricchire i tuoi messaggi e post!',
   alternates: {
-    canonical: 'https://caratterispeciali10.it/text-characters-emoticons',
+    canonical: 'https://www.caratterispeciali10.it/text-characters-emoticons',
   },
-  metadataBase: new URL('https://caratterispeciali10.it'),
+  metadataBase: new URL('https://www.caratterispeciali10.it'),
   openGraph: {
     title: 'Emoticon, Simboli e Caratteri Speciali - caratterispeciali10.it',
     description: 'Scopri una vasta raccolta di emoticon, simboli e caratteri speciali da copiare e incollare facilmente.',
-    url: 'https://caratterispeciali10.it/text-characters-emoticons',
+    url: 'https://www.caratterispeciali10.it/text-characters-emoticons',
     locale: 'it_IT',
     siteName: 'caratterispeciali10.it',
   },
