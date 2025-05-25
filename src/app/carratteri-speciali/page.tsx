@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Caratteri Speciali da Copiare e Incollare - Simboli, Lettere in Corsivo e Font",
   description:
-    "Usa il nostro generatore gratuito di caratteri speciali per creare scritte in corsivo, lettere maiuscole e simboli unici. Copia e incolla caratteri per Instagram, tatuaggi, e messaggi creativi in pochi clic!",
+    "Genera e copia caratteri speciali, simboli e lettere in corsivo per Instagram, tatuaggi e messaggi creativi.",
   keywords: [
     "caratteri speciali", "corsivo", "lettere in corsivo", "alfabeto in corsivo", "font corsivo",
     "scrittura in corsivo", "simboli tastiera", "tatuaggi font", "caratteri Instagram",
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         {/* Instructions */}
         <div className="p-4 text-left rounded-lg mb-8">
-          <h3 className="font-medium text-white mb-2">Come utilizzare i caratteri speciali</h3>
+          <h2 className="font-medium text-white mb-2">Come utilizzare i caratteri speciali</h2>
           <ol className="list-decimal pl-5 text-gray-700 space-y-2">
             <li>Clicca su un carattere per copiarlo negli appunti</li>
             <li>Incolla il carattere dove desideri (documento, chat, social media, ecc.)</li>

@@ -1,14 +1,14 @@
+import { Metadata } from "next";
 import FancyTextGenerator from "@/src/components/fancy-text-generator";
 
-
+export const metadata: Metadata = {
+  title: "Nome Speciale - Generatore di Testo Fantasioso",
+  description: "Crea un nome speciale con il nostro generatore di testo fantasioso. Personalizza e copia facilmente nomi unici e creativi.",
+};
 export default function Home() {
   return (
     <main className="min-h-screen">
       <FancyTextGenerator />
     </main>
-  )
+  );
 }
-export const metadata = {
-  title: "Generatore di Testo Fantasioso",
-  description: "Crea testi stilizzati e fantasiosi facilmente online.",
-};

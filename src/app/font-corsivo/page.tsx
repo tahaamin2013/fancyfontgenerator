@@ -46,7 +46,7 @@ const FancyTextGenerator: React.FC = () => {
           <title>Lettere in Corsivo e Caratteri Speciali - Generatore Online</title>
           <meta
             name="description"
-            content="Genera lettere corsive, alfabeto corsivo maiuscolo e minuscolo, caratteri speciali da tastiera per Instagram, tatuaggi e social media. Copia e incolla facilmente!"
+            content="Genera lettere corsive, alfabeto corsivo maiuscolo e minuscolo e caratteri speciali per Instagram, tatuaggi e social media. Copia e incolla facilmente!"
           />
         </head>
       </>

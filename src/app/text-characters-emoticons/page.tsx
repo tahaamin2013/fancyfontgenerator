@@ -25,10 +25,10 @@ export default function EmoticonPage() {
       </>
       <h1 className="text-3xl font-bold text-center mb-4">Emoticon Testuali</h1>
       <p className="text-center text-muted-foreground mb-2">
-        Sfoglia e copia le tue emoticon testuali preferite da usare nei messaggi e sui social media
+        Sfoglia e copia emoticon semplici da usare nei tuoi messaggi e sui social.
       </p>
       <p className="text-center text-muted-foreground mb-8 text-sm">
-        Collezione completa di faccine testuali, kaomoji e simboli per arricchire le tue conversazioni online
+        Trova faccine, kaomoji e simboli per rendere le tue chat più divertenti.
       </p>
 
       <ClientEmoticonPage />
