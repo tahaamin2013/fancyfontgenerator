@@ -311,6 +311,20 @@ export default function FancyTextGenerator() {
                 <li>caratteri strani per WhatsApp</li>
               </ul>
               </div>
+              <div className="mt-12">
+                <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                  Perché scegliere il nostro generatore di decorazioni per nomi?
+                </h2>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Il nostro strumento ti permette di trasformare facilmente il tuo nome o nickname in una versione unica e accattivante, pronta per essere usata ovunque online. Grazie a una vasta selezione di stili e simboli, puoi trovare la decorazione perfetta per ogni occasione, sia che tu voglia distinguerti sui social, nei giochi o nelle chat.
+                </p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Tutti gli stili sono compatibili con la maggior parte delle piattaforme e non richiedono installazioni o registrazioni. Basta inserire il testo, scegliere lo stile che preferisci e copiarlo con un click. Il generatore è aggiornato regolarmente per offrirti sempre nuove idee e combinazioni originali.
+                </p>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Prova subito il generatore e scopri come un semplice dettaglio può rendere il tuo nome davvero speciale!
+                </p>
+              </div>
             </div>
             </motion.div>
         </div>
