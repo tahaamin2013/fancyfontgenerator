@@ -90,6 +90,7 @@ const FancyTextGenerator: React.FC = () => {
         name="description"
         content="Genera caratteri speciali per Whatsapp e altri social. Scegli tra oltre 100+ stili di font unici e copia facilmente il testo personalizzato!"
       />
+      <link rel="canonical" href="https://carraterispeciali10.it/social/generatore-di-caratteri-per-whatsapp" />
     </head>
   </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

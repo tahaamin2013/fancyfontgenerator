@@ -90,6 +90,9 @@ const FancyTextGenerator: React.FC = () => {
         name="description"
         content="Genera caratteri speciali e font eleganti per Facebook. Copia facilmente caratteri unici per i tuoi post e rendi i tuoi contenuti più accattivanti."
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="canonical" href="https://caratterispeciali10.it/social/generatore-di-caratteri-per-facebook" />
     </head>
   </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

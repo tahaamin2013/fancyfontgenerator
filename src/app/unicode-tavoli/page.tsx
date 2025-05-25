@@ -1114,6 +1114,7 @@ export default function UnicodeTable() {
       <>
         <head>
           <title>Tabella Unicode</title>
+          <link rel="canonical" href="https://carraterispeciali10.it/unicode-tavoli" />
           <meta name="description" content="Tabella caratteri Unicode: esplora i caratteri e i codici esadecimali." />
         </head>
       </>

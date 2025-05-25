@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     "scrittura bella", "caratteri da tastiera", "generatore lettere", "font per tatuaggi", "lettere maiuscole in corsivo",
     "copia e incolla simboli", "calligrafia in corsivo", "font Instagram"
   ],
+  alternates: {
+    canonical: "https://www.caratterispeciali10.it/carratteri-speciali",
+  },
   metadataBase: new URL("https://www.caratterispeciali10.it"),
   openGraph: {
     title: "Caratteri Speciali da Copiare e Incollare",

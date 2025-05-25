@@ -1158,6 +1158,7 @@ export default function EmojisPage() {
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="it_IT" />
   <meta name="language" content="Italian" />
+  <link rel="canonical" href="https://carraterispeciali10.it/emojis" />
       </Head>
         {/* Header */}
         <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200/50 sticky top-0 z-10">

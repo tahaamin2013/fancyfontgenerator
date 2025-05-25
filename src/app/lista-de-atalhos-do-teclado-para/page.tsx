@@ -14,6 +14,7 @@ export default function KeyboardShortcutsPage() {
           name="description"
           content="Scopri come usare i codici Alt per digitare caratteri speciali su Windows. Elenco completo di simboli e istruzioni passo passo."
         />
+        <link rel="canonical" href="https://caratterispeciali10.it/lista-de-atalhos-do-teclado-para" />
       </Head>
       <header className="bg-purple-800 text-white py-8 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
