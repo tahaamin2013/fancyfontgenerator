@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 
 import {
   fonts,
-} from "@/src/app/data"
+} from "@/src/app/font-corsivo/data"
 import EmoticonSelector from "@/src/components/Specialchar"
 
 const combinedCharMap: any = {
