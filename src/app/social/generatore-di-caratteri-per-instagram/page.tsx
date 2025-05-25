@@ -89,7 +89,7 @@ const FancyTextGenerator: React.FC = () => {
       name="description"
       content="Crea facilmente caratteri speciali per Instagram e social media. Copia e incolla font unici e simboli per rendere i tuoi post più eleganti e originali."
     />
-    <link rel="canonical" href="https://carraterispeciali10.it/social/generatore-di-caratteri-per-instagram" />
+    <link rel="canonical" href="https://www.caratterispeciali10.it/social/generatore-di-caratteri-per-instagram" />
   </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div

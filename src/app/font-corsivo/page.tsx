@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   keywords: ['generatore testo corsivo', 'corsivo online', 'testo corsivo', 'scrittura corsiva'],
   description: 'Crea testo corsivo online facilmente con il nostro generatore di testo corsivo.',
   alternates: {
-    canonical: 'https://carraterispeciali10.it/font-corsivo',
+    canonical: 'https://www.caratterispeciali10.it/font-corsivo',
   },
 }
 

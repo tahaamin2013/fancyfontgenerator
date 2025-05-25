@@ -89,7 +89,7 @@ const FancyTextGenerator: React.FC = () => {
       name="description"
       content="Crea facilmente caratteri speciali e simboli per nickname, social e giochi. Copia e personalizza il tuo testo con oltre 100+ stili unici!"
     />
-    <link rel="canonical" href="https://carraterispeciali10.it/social/generatore-di-caratteri-per-nickname" />
+    <link rel="canonical" href="https://www.caratterispeciali10.it/social/generatore-di-caratteri-per-nickname" />
   </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div

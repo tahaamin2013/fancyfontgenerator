@@ -90,7 +90,7 @@ const FancyTextGenerator: React.FC = () => {
         name="description"
         content="Genera caratteri speciali e simboli per Tumblr facilmente. Copia e incolla font unici e decorativi per personalizzare i tuoi post e profili."
       />
-      <link rel="canonical" href="https://carraterispeciali10.it/social/generatore-di-caratteri-per-tumblr/" />
+      <link rel="canonical" href="https://www.caratterispeciali10.it/social/generatore-di-caratteri-per-tumblr/" />
     </head>
   </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

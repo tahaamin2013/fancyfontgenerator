@@ -90,7 +90,7 @@ const FancyTextGenerator: React.FC = () => {
         name="description"
         content="Generatore di caratteri speciali per Twitter. Crea e copia caratteri unici e simboli per rendere i tuoi tweet più eleganti e originali."
       />
-      <link rel="canonical" href="https://carraterispeciali10.it/social/generatore-di-caratteri-per-twitter" />
+      <link rel="canonical" href="https://www.caratterispeciali10.it/social/generatore-di-caratteri-per-twitter" />
     </head>
   </>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
