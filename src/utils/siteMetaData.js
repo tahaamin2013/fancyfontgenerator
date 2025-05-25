@@ -25,7 +25,7 @@ const siteMetadata = {
   },
     
   author: 'Devkins',
-  description: 'caratteri speciali',
+  description: 'Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito.',
   language: 'it',
   theme: 'light', // system, dark or light
   siteUrl: 'https://www.caratterispeciali10.it/', // your website URL
