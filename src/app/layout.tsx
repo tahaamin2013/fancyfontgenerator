@@ -36,6 +36,7 @@ export const metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+    canonical: siteMetadata.siteUrl,
   },
 };
 export default function RootLayout({

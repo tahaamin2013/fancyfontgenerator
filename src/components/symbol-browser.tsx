@@ -118,7 +118,7 @@
 //             <Card>
 //               <CardContent className="flex flex-col items-center justify-center p-8 text-center">
 //                 <Heart className="text-gray-300 mb-4" size={48} />
-//                 <h3 className="text-xl font-medium mb-2">Nenhum favorito ainda</h3>
+//                 <h2 className="text-xl font-medium mb-2">Nenhum favorito ainda</h3>
 //                 <p className="text-gray-500">
 //                   Clique no coração em qualquer símbolo para adicioná-lo aos seus favoritos.
 //                 </p>

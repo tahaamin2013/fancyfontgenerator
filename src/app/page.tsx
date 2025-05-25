@@ -213,7 +213,7 @@ const FancyTextGenerator: React.FC = () => {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                    <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                       Caratteri Speciali per Social Media
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -239,7 +239,7 @@ const FancyTextGenerator: React.FC = () => {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                    <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                       Caratteri Speciali nei Giochi
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -265,7 +265,7 @@ const FancyTextGenerator: React.FC = () => {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                    <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                       Caratteri Speciali in Word
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -290,7 +290,7 @@ const FancyTextGenerator: React.FC = () => {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+                    <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                       Simboli e Caratteri Speciali HTML
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300">
@@ -322,7 +322,7 @@ const FancyTextGenerator: React.FC = () => {
 
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Cosa sono i caratteri speciali?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300">
@@ -334,7 +334,7 @@ const FancyTextGenerator: React.FC = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Come si usano i caratteri speciali?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-3">
@@ -350,7 +350,7 @@ const FancyTextGenerator: React.FC = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Dove posso usare questi caratteri?
                   </h3>
                   <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">

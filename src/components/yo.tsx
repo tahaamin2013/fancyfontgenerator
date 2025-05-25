@@ -154,7 +154,7 @@ const FancyTextGenerator: React.FC = () => {
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                     Alfabeto in Corsivo Maiuscolo e Minuscolo
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -171,7 +171,7 @@ const FancyTextGenerator: React.FC = () => {
                 </div>
                 
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                     Caratteri Speciali per Instagram e Social
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
@@ -188,7 +188,7 @@ const FancyTextGenerator: React.FC = () => {
               </div>
 
               <div className="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                   Come Usare le Lettere Corsive
                 </h3>
                 <ol className="text-gray-600 dark:text-gray-300 space-y-2">
@@ -200,7 +200,7 @@ const FancyTextGenerator: React.FC = () => {
               </div>
 
               <div className="mt-8">
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                   Stili di Calligrafia Corsiva Disponibili
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">

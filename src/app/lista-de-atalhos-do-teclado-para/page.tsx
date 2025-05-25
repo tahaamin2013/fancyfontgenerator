@@ -38,25 +38,25 @@ export default function KeyboardShortcutsPage() {
                   </p>
 
                   <div className="bg-purple-100 p-4 rounded-lg">
-                    <h3 className="font-semibold text-purple-800 flex items-center gap-2 mb-2">
+                    <h2 className="font-semibold text-purple-800 flex items-center gap-2 mb-2">
                       <span className="bg-purple-800 text-white p-1 rounded-full w-6 h-6 inline-flex items-center justify-center text-sm">
                         1
                       </span>
                       Assicurati che il Bloc Num sia ATTIVO
                     </h3>
-                    <h3 className="font-semibold text-purple-800 flex items-center gap-2 mb-2">
+                    <h2 className="font-semibold text-purple-800 flex items-center gap-2 mb-2">
                       <span className="bg-purple-800 text-white p-1 rounded-full w-6 h-6 inline-flex items-center justify-center text-sm">
                         2
                       </span>
                       Tieni premuto il tasto Alt
                     </h3>
-                    <h3 className="font-semibold text-purple-800 flex items-center gap-2 mb-2">
+                    <h2 className="font-semibold text-purple-800 flex items-center gap-2 mb-2">
                       <span className="bg-purple-800 text-white p-1 rounded-full w-6 h-6 inline-flex items-center justify-center text-sm">
                         3
                       </span>
                       Digita il numero sul tastierino numerico
                     </h3>
-                    <h3 className="font-semibold text-purple-800 flex items-center gap-2">
+                    <h2 className="font-semibold text-purple-800 flex items-center gap-2">
                       <span className="bg-purple-800 text-white p-1 rounded-full w-6 h-6 inline-flex items-center justify-center text-sm">
                         4
                       </span>
@@ -79,7 +79,7 @@ export default function KeyboardShortcutsPage() {
               </div>
 
               <div className="md:w-1/3 bg-purple-800 rounded-lg p-6 text-white flex flex-col justify-center">
-                <h3 className="text-xl font-bold mb-4">Esempi</h3>
+                <h2 className="text-xl font-bold mb-4">Esempi</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3">
                     <Badge className="bg-white text-purple-800 hover:bg-purple-100">Alt + 1</Badge>

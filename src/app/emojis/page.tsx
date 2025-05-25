@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Emojis per Discord, Telegram, WhatsApp e Social - Categorie Emoji',
-    description: 'Sfoglia centinaia di emoji organizzate per categoria. Copia e incolla facilmente le tue emoji preferite per chat e social.',
+    description: 'Sfoglia emoji per categoria e copia facilmente le tue preferite per chat e social.',
     type: 'website',
     locale: 'it_IT',
     url: 'https://www.caratterispeciali10.it/emojis',

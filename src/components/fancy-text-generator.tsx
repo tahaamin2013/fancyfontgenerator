@@ -213,7 +213,7 @@ export default function FancyTextGenerator() {
 
               <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Cosa sono le decorazioni con caratteri speciali?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
@@ -222,7 +222,7 @@ export default function FancyTextGenerator() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Come usarle:</h3>
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Come usarle:</h3>
                 <ol className="list-decimal list-inside text-gray-600 dark:text-gray-300 space-y-2 ml-4">
                 <li>Scrivi il tuo nome o nickname nel campo in alto.</li>
                 <li>Guarda i diversi stili disponibili.</li>
@@ -232,7 +232,7 @@ export default function FancyTextGenerator() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Dove puoi usare il tuo nome decorato:
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1 ml-4">
@@ -251,7 +251,7 @@ export default function FancyTextGenerator() {
               </h2>
               <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Perché usare caratteri speciali per il nome?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
@@ -259,7 +259,7 @@ export default function FancyTextGenerator() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 I nomi decorati funzionano ovunque?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
@@ -267,7 +267,7 @@ export default function FancyTextGenerator() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 È sicuro usare questi caratteri?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
@@ -275,7 +275,7 @@ export default function FancyTextGenerator() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Posso decorare anche messaggi o bio?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
@@ -283,7 +283,7 @@ export default function FancyTextGenerator() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Come creo uno stile personalizzato?
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">

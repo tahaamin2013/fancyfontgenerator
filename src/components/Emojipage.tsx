@@ -1192,7 +1192,7 @@ export default function EmojisPage() {
                   <div className="text-4xl md:text-5xl mb-3 group-hover:scale-110 transition-transform duration-200">
                     {category.emoji}
                   </div>
-                  <h3 className="font-semibold text-sm md:text-base text-gray-800 mb-2">
+                  <h2 className="font-semibold text-sm md:text-base text-gray-800 mb-2">
                     {category.name}
                   </h3>
                   <p className="text-xs text-gray-500">
@@ -1206,7 +1206,7 @@ export default function EmojisPage() {
           {filteredCategories.length === 0 && (
             <div className="text-center py-12">
               <div className="text-6xl mb-4">🔍</div>
-              <h3 className="text-xl font-medium text-gray-600 mb-2">No categories found</h3>
+              <h2 className="text-xl font-medium text-gray-600 mb-2">No categories found</h3>
               <p className="text-gray-500">Try adjusting your search terms</p>
             </div>
           )}
@@ -1298,7 +1298,7 @@ export default function EmojisPage() {
                 animation: 'fadeInUp 0.6s ease-out forwards'
               }}
             >
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
                 {subcategory.name}
                 <span className="text-sm text-gray-500 font-normal">
                   ({subcategory.emojis.length} emojis)
