@@ -19,11 +19,11 @@ export default function Home() {
         <p className="mb-4">
           Un <strong>nome speciale</strong> è un nome con simboli e decorazioni. Lo rende unico e diverso dagli altri. Puoi usarlo sui social, nei giochi o nelle chat per farti notare.
         </p>
-        <h3 className="text-xl font-semibold mb-2">Come funziona il generatore?</h3>
+        <h3 className="text-xl font-semibold mb-2">Come funziona il generatore?</h2>
         <p className="mb-4">
           Scrivi il tuo nome nel generatore. Scegli lo stile che ti piace. In pochi secondi avrai un nome creativo da copiare e usare dove vuoi.
         </p>
-        <h3 className="text-xl font-semibold mb-2">Perché usare nomi decorati?</h3>
+        <h3 className="text-xl font-semibold mb-2">Perché usare nomi decorati?</h2>
         <p>
           I nomi decorati sono perfetti per i profili social, i giochi e le firme online. Rendono il tuo nome più bello e facile da ricordare.
         </p>

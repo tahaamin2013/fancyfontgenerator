@@ -215,14 +215,14 @@ export default function FancyTextGenerator() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Cosa sono le decorazioni con caratteri speciali?
-                </h3>
+                </h2>
                 <p className="text-gray-600 dark:text-gray-300">
                 Le decorazioni con caratteri speciali sono combinazioni di simboli e lettere che rendono il tuo nome più bello e originale. Puoi usarle per far risaltare il tuo testo online.
                 </p>
               </div>
 
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Come usarle:</h3>
+                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Come usarle:</h2>
                 <ol className="list-decimal list-inside text-gray-600 dark:text-gray-300 space-y-2 ml-4">
                 <li>Scrivi il tuo nome o nickname nel campo in alto.</li>
                 <li>Guarda i diversi stili disponibili.</li>
@@ -234,7 +234,7 @@ export default function FancyTextGenerator() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Dove puoi usare il tuo nome decorato:
-                </h3>
+                </h2>
                 <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1 ml-4">
                 <li>Profili social (Instagram, Facebook, Twitter)</li>
                 <li>Nomi nei giochi (Fortnite, Brawl Stars, Minecraft)</li>
@@ -253,7 +253,7 @@ export default function FancyTextGenerator() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Perché usare caratteri speciali per il nome?
-                </h3>
+                </h2>
                 <p className="text-gray-600 dark:text-gray-300">
                 I caratteri speciali rendono il tuo nome unico e facile da riconoscere. Ti aiutano a farti notare su social, giochi e chat.
                 </p>
@@ -261,7 +261,7 @@ export default function FancyTextGenerator() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 I nomi decorati funzionano ovunque?
-                </h3>
+                </h2>
                 <p className="text-gray-600 dark:text-gray-300">
                 Quasi tutte le piattaforme accettano questi caratteri. Se hai dubbi, prova a incollare il nome per vedere se funziona.
                 </p>
@@ -269,7 +269,7 @@ export default function FancyTextGenerator() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 È sicuro usare questi caratteri?
-                </h3>
+                </h2>
                 <p className="text-gray-600 dark:text-gray-300">
                 Sì, sono simboli Unicode standard. Non ci sono rischi per la sicurezza del tuo account.
                 </p>
@@ -277,7 +277,7 @@ export default function FancyTextGenerator() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Posso decorare anche messaggi o bio?
-                </h3>
+                </h2>
                 <p className="text-gray-600 dark:text-gray-300">
                 Certo! Puoi decorare qualsiasi testo: messaggi, bio, descrizioni, titoli e altro.
                 </p>
@@ -285,7 +285,7 @@ export default function FancyTextGenerator() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                 Come creo uno stile personalizzato?
-                </h3>
+                </h2>
                 <p className="text-gray-600 dark:text-gray-300">
                 Usa il generatore qui sopra per trovare idee. Puoi anche combinare simboli diversi per creare una decorazione unica.
                 </p>

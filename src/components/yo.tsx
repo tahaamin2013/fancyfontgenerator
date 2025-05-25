@@ -156,7 +156,7 @@ const FancyTextGenerator: React.FC = () => {
                 <div>
                   <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                     Alfabeto in Corsivo Maiuscolo e Minuscolo
-                  </h3>
+                  </h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Il nostro generatore di lettere corsive ti permette di creare un alfabeto in corsivo completo, 
                     sia maiuscolo che minuscolo. Perfetto per scrittura Instagram, tatuaggi stilizzati e 
@@ -173,7 +173,7 @@ const FancyTextGenerator: React.FC = () => {
                 <div>
                   <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                     Caratteri Speciali per Instagram e Social
-                  </h3>
+                  </h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     Usa i nostri caratteri speciali con tastiera copia incolla per rendere unici i tuoi post. 
                     Ideali per Instagram, WhatsApp, Facebook e altre piattaforme social.
@@ -190,7 +190,7 @@ const FancyTextGenerator: React.FC = () => {
               <div className="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl">
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                   Come Usare le Lettere Corsive
-                </h3>
+                </h2>
                 <ol className="text-gray-600 dark:text-gray-300 space-y-2">
                   <li>1. Scrivi il tuo testo nel campo di input</li>
                   <li>2. Scegli lo stile di scrittura corsiva che preferisci</li>
@@ -202,7 +202,7 @@ const FancyTextGenerator: React.FC = () => {
               <div className="mt-8">
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                   Stili di Calligrafia Corsiva Disponibili
-                </h3>
+                </h2>
                 <p className="text-gray-600 dark:text-gray-300">
                   Il nostro generatore offre diversi stili di <strong>scrittura in corsivo</strong>, 
                   dal classico <strong>font corsivo</strong> elegante alle <strong>lettere corsive</strong> 

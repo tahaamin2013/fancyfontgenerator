@@ -1194,7 +1194,7 @@ export default function EmojisPage() {
                   </div>
                   <h2 className="font-semibold text-sm md:text-base text-gray-800 mb-2">
                     {category.name}
-                  </h3>
+                  </h2>
                   <p className="text-xs text-gray-500">
                     {category.subcategories.length} subcategories
                   </p>
@@ -1206,7 +1206,7 @@ export default function EmojisPage() {
           {filteredCategories.length === 0 && (
             <div className="text-center py-12">
               <div className="text-6xl mb-4">🔍</div>
-              <h2 className="text-xl font-medium text-gray-600 mb-2">No categories found</h3>
+              <h2 className="text-xl font-medium text-gray-600 mb-2">No categories found</h2>
               <p className="text-gray-500">Try adjusting your search terms</p>
             </div>
           )}
@@ -1303,7 +1303,7 @@ export default function EmojisPage() {
                 <span className="text-sm text-gray-500 font-normal">
                   ({subcategory.emojis.length} emojis)
                 </span>
-              </h3>
+              </h2>
               <div className="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 xl:grid-cols-16 gap-3">
                 {subcategory.emojis.map((emoji, emojiIndex) => (
                   <div

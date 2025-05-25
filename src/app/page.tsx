@@ -215,7 +215,7 @@ const FancyTextGenerator: React.FC = () => {
                     </div>
                     <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                       Caratteri Speciali per Social Media
-                    </h3>
+                    </h2>
                     <p className="text-gray-600 dark:text-gray-300">
                       I caratteri speciali su Instagram, Facebook e WhatsApp possono rendere il tuo profilo unico e
                       attirare più follower.
@@ -241,7 +241,7 @@ const FancyTextGenerator: React.FC = () => {
                     </div>
                     <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                       Caratteri Speciali nei Giochi
-                    </h3>
+                    </h2>
                     <p className="text-gray-600 dark:text-gray-300">
                       Personalizza il tuo nome in Fortnite e Brawl Stars con caratteri speciali aesthetic per
                       distinguerti dagli altri giocatori.
@@ -267,7 +267,7 @@ const FancyTextGenerator: React.FC = () => {
                     </div>
                     <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                       Caratteri Speciali in Word
-                    </h3>
+                    </h2>
                     <p className="text-gray-600 dark:text-gray-300">
                       Scopri come utilizzare i caratteri speciali di Word per documenti professionali e accademici.
                     </p>
@@ -292,7 +292,7 @@ const FancyTextGenerator: React.FC = () => {
                     </div>
                     <h2 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
                       Simboli e Caratteri Speciali HTML
-                    </h3>
+                    </h2>
                     <p className="text-gray-600 dark:text-gray-300">
                       I caratteri speciali HTML sono essenziali per gli sviluppatori web. Usa il nostro strumento per
                       generarli facilmente.
@@ -324,7 +324,7 @@ const FancyTextGenerator: React.FC = () => {
                 <div>
                   <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Cosa sono i caratteri speciali?
-                  </h3>
+                  </h2>
                   <p className="text-gray-600 dark:text-gray-300">
                     I caratteri speciali sono simboli che non trovi sulla tastiera normale. Sono lettere o segni
                     particolari presi da un sistema chiamato Unicode. Con questi simboli puoi creare testi diversi,
@@ -336,7 +336,7 @@ const FancyTextGenerator: React.FC = () => {
                 <div>
                   <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Come si usano i caratteri speciali?
-                  </h3>
+                  </h2>
                   <p className="text-gray-600 dark:text-gray-300 mb-3">
                     È molto semplice. Basta scrivere una frase nel nostro convertitore, e subito vedrai il testo in
                     tanti stili diversi: corsivo, gotico, elegante, scritto a mano o anche stile aesthetic. Ti basta
@@ -352,7 +352,7 @@ const FancyTextGenerator: React.FC = () => {
                 <div>
                   <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Dove posso usare questi caratteri?
-                  </h3>
+                  </h2>
                   <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
                     <li>
                       Post di Instagram con <strong>caratteri speciali instagram</strong>
