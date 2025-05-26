@@ -14,52 +14,49 @@ interface Emoticon {
 export default function EmoticonPage() {
   return (
     <div className="container mx-auto py-8 px-4">
-
-
       <h1 className="text-3xl font-bold text-center mb-4">Emoticon Testuali</h1>
       <p className="text-center text-muted-foreground mb-2">
-        Sfoglia e copia emoticon semplici per i tuoi messaggi e social.
+      Sfoglia e copia faccine semplici per i tuoi messaggi.
       </p>
       <p className="text-center text-muted-foreground mb-8 text-sm">
-        Trova faccine, kaomoji e simboli per rendere le chat più divertenti.
+      Trova simboli e faccine per rendere le chat più allegre.
       </p>
 
       <ClientEmoticonPage />
-<div className="mt-12 max-w-2xl mx-auto text-center text-base leading-relaxed text-muted-foreground">
-  <h2 className="text-xl font-semibold mb-4">Cos'è una emoticon?</h2>
-  <p>
-    Una emoticon è una faccina. Si scrive con la tastiera. Ti aiuta a dire come ti senti.
-    Per esempio:
-    <span className="font-mono">:)</span> vuol dire "sono felice",<br />
-    <span className="font-mono">:(</span> vuol dire "sono triste",<br />
-    <span className="font-mono">&lt;3</span> vuol dire "ti voglio bene".
-  </p>
 
-  <h2 className="text-lg font-semibold mt-6 mb-2">Come si usa?</h2>
-  <ul className="list-disc list-inside mb-4 text-left mx-auto max-w-md">
-    <li>Guarda la faccina che ti piace.</li>
-    <li>Clicca il bottone "Copia".</li>
-    <li>Incolla la faccina nel tuo messaggio.</li>
-  </ul>
+      <div className="mt-12 max-w-2xl mx-auto text-center text-base leading-relaxed text-muted-foreground">
+      <h2 className="text-xl font-semibold mb-4">Cos'è una emoticon?</h2>
+      <p>
+        Una emoticon è una faccina fatta con la tastiera. Ti aiuta a dire come ti senti.<br />
+        Per esempio:<br />
+        <span className="font-mono">:)</span> vuol dire "sono felice",<br />
+        <span className="font-mono">:(</span> vuol dire "sono triste",<br />
+        <span className="font-mono">&lt;3</span> vuol dire "ti voglio bene".
+      </p>
 
-  <p>
-    Le emoticon fanno sembrare i messaggi più felici e simpatici.<br />
-    Non serve scaricare niente. Basta copiare e incollare!<br />
-    Ecco altri esempi:<br />
-    <span className="font-mono">:D</span> = sto ridendo<br />
-    <span className="font-mono">;)</span> = faccio l’occhiolino<br />
-    <span className="font-mono">T_T</span> = sto piangendo
-  </p>
+      <h2 className="text-lg font-semibold mt-6 mb-2">Come si usa?</h2>
+      <ul className="list-disc list-inside mb-4 text-left mx-auto max-w-md">
+        <li>Scegli la faccina che ti piace.</li>
+        <li>Clicca su "Copia".</li>
+        <li>Incolla la faccina nel tuo messaggio.</li>
+      </ul>
 
-  <h2 className="text-lg font-semibold mt-6 mb-2">Perché usarle?</h2>
-  <p>
-    Perché sono facili!<br />
-    Tutti le capiscono. Puoi far vedere come ti senti.<br />
-    E rendono i tuoi messaggi più divertenti!
-  </p>
-</div>
+      <p>
+        Le emoticon rendono i messaggi più simpatici.<br />
+        Non serve scaricare nulla. Basta copiare e incollare!<br />
+        Altri esempi:<br />
+        <span className="font-mono">:D</span> = sto ridendo<br />
+        <span className="font-mono">;)</span> = occhiolino<br />
+        <span className="font-mono">T_T</span> = sto piangendo
+      </p>
 
-
+      <h2 className="text-lg font-semibold mt-6 mb-2">Perché usarle?</h2>
+      <p>
+        Sono facili da usare.<br />
+        Tutti le capiscono. Mostrano come ti senti.<br />
+        Rendono i messaggi più divertenti!
+      </p>
+      </div>
     </div>
   )
 }
