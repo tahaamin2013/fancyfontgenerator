@@ -1,6 +1,6 @@
 // please update required information
 const siteMetadata = {
-  title: 'Generatore di Caratteri Speciali e Lettere in Corsivo',
+  title: 'Generatore di Caratteri Speciali copia e incolla',
   titleTemplate: '%s | Caratteri Speciali',
   keywords: [
     'caratteri speciali',
@@ -14,18 +14,19 @@ const siteMetadata = {
     'caratteri speciali per Snapchat',
     'generatore di caratteri speciali',
     'generatore di lettere in corsivo',
+    'copia e incolla',
   ],
   openGraph: {
     type: 'website',
-    title: 'Generatore di Caratteri Speciali e Lettere in Corsivo',
-    description: 'Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito.',
+    title: 'Generatore di Caratteri Speciali copia e incolla',
+    description: 'Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito. Copia e incolla con un click.',
     url: 'https://www.caratterispeciali10.it/',
     siteName: 'Caratteri Speciali',
    
   },
     
   author: 'Devkins',
-  description: 'Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito.',
+  description: 'Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito. Copia e incolla con un click.',
   language: 'it',
   theme: 'light', // system, dark or light
   siteUrl: 'https://www.caratterispeciali10.it/', // your website URL

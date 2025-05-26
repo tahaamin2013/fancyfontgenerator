@@ -12,10 +12,7 @@ const NextThemeProvider = lazy(() => import("@/src/providers/theme-provider"));
 
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
-  title: {
-    template: `%s | ${siteMetadata.title}`,
-    default: siteMetadata.title,
-  },
+title: siteMetadata.title,
   description: siteMetadata.description,
   openGraph: {
     title: siteMetadata.title,
