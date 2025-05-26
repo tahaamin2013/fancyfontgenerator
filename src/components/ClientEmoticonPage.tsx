@@ -29,20 +29,20 @@ export default function EmoticonPage() {
       <div className="mt-12 max-w-2xl mx-auto text-center text-base leading-relaxed text-muted-foreground">
         <h2 className="text-xl font-semibold mb-4">Cosa Sono le Emoticon Testuali?</h2>
         <p>
-          Le emoticon testuali sono semplici faccine e simboli creati usando i caratteri della tastiera. Puoi usarle nei tuoi messaggi, sui social media e nelle chat per mostrare emozioni, reazioni o semplicemente per divertimento. Ad esempio, <span className="font-mono">:)</span> significa felicità, <span className="font-mono">:(</span> significa tristezza e <span className="font-mono">&lt;3</span> significa amore. Queste emoticon sono facili da usare e funzionano ovunque, anche se non puoi usare le emoji.
+          Le emoticon testuali sono faccine e simboli creati con i tasti della tastiera. Puoi usarle nei messaggi, sui social e nelle chat per mostrare emozioni o per divertimento. Ad esempio, <span className="font-mono">:)</span> vuol dire felicità, <span className="font-mono">:(</span> vuol dire tristezza e <span className="font-mono">&lt;3</span> vuol dire amore. Sono facili da usare e funzionano ovunque, anche senza emoji.
         </p>
         <h2 className="text-lg font-semibold mt-6 mb-2">Come Usare le Emoticon</h2>
         <ul className="list-disc list-inside mb-4 text-left mx-auto max-w-md">
-          <li>Trova l’emoticon che ti piace dall’elenco qui sopra.</li>
-          <li>Clicca sul pulsante <span className="font-semibold">Copia</span> accanto ad essa.</li>
-          <li>Incollala nella tua chat, messaggio o post sui social.</li>
+          <li>Scegli l’emoticon che ti piace dall’elenco sopra.</li>
+          <li>Clicca sul pulsante <span className="font-semibold">Copia</span> accanto.</li>
+          <li>Incollala nella chat, in un messaggio o in un post.</li>
         </ul>
         <p>
-          Usare le emoticon testuali è un ottimo modo per rendere i tuoi messaggi più divertenti e amichevoli. Non serve nessuna app o tastiera speciale. Basta copiare e incollare! Prova a usare emoticon diverse per mostrare il tuo umore, come <span className="font-mono">:D</span> per un grande sorriso, <span className="font-mono">;)</span> per un occhiolino, o <span className="font-mono">T_T</span> per piangere.
+          Le emoticon rendono i messaggi più simpatici e amichevoli. Non serve nessuna app speciale. Basta copiare e incollare! Prova emoticon diverse per mostrare il tuo umore, come <span className="font-mono">:D</span> per un grande sorriso, <span className="font-mono">;)</span> per un occhiolino, o <span className="font-mono">T_T</span> per piangere.
         </p>
         <h2 className="text-lg font-semibold mt-6 mb-2">Perché Usare le Emoticon Testuali?</h2>
         <p>
-          Le emoticon testuali sono veloci, semplici e funzionano su tutti i dispositivi. Ti aiutano a esprimerti, rendono i tuoi messaggi più originali e ti permettono di connetterti con gli amici. Inizia a usare le emoticon oggi stesso per rendere le tue chat più colorate e divertenti!
+          Le emoticon testuali sono veloci, semplici e funzionano su tutti i dispositivi. Ti aiutano a esprimerti e rendono i messaggi più originali. Inizia a usarle per rendere le tue chat più colorate e divertenti!
         </p>
       </div>
     </div>
