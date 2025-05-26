@@ -2,7 +2,7 @@ import EmojisPage from '@/src/components/Emojipage'
 import React from 'react'
 import { Metadata } from 'next'
 export const metadata: Metadata = {
-  title: 'Emojis per Discord, Telegram, WhatsApp e Social - Categorie Emoji',
+  title: 'Emojis per Discord, Telegram, WhatsApp e Social',
   description: 'Soglia emoji per categoria e copia facilmente le tue preferite per chat e social.',
   keywords: [
     'emoji',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'emoticon'
   ],
   openGraph: {
-    title: 'Emojis per Discord, Telegram, WhatsApp e Social - Categorie Emoji',
+    title: 'Emojis per Discord, Telegram, WhatsApp e Social',
     description: 'Soglia emoji per categoria e copia facilmente le tue preferite per chat e social.',
     type: 'website',
     locale: 'it_IT',

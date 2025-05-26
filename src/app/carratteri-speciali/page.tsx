@@ -2,7 +2,7 @@ import CharacterGrid from "@/src/components/character-grid"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Caratteri Speciali da Copiare e Incollare - Simboli, Lettere in Corsivo e Font",
+  title: "Caratteri Speciali da Copiare e Incollare - Simboli, Corsivo",
   description:
     "Genera e copia caratteri speciali, simboli e lettere in corsivo per Instagram, tatuaggi e messaggi creativi.",
   keywords: [

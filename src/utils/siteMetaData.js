@@ -1,6 +1,6 @@
 // please update required information
 const siteMetadata = {
-  title: 'Generatore di Caratteri Speciali e Lettere in Corsivo - Copia e Incolla',
+  title: 'Generatore di Caratteri Speciali e Lettere in Corsivo',
   titleTemplate: '%s | Caratteri Speciali',
   keywords: [
     'caratteri speciali',
@@ -17,7 +17,7 @@ const siteMetadata = {
   ],
   openGraph: {
     type: 'website',
-    title: 'Generatore di Caratteri Speciali e Lettere in Corsivo - Copia e Incolla',
+    title: 'Generatore di Caratteri Speciali e Lettere in Corsivo',
     description: 'Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito.',
     url: 'https://www.caratterispeciali10.it/',
     siteName: 'Caratteri Speciali',
