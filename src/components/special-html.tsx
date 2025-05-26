@@ -16,7 +16,11 @@ export default function SpecialCharactersPage() {
           Tabella dei Caratteri Speciali
         </h1>
 
-        <div className="mb-8">
+          <h1 className=" text-green-950">
+          Tabella dei Caratteri Speciali
+          </h1>
+
+        <div className="mb-8 ">
           <div className="relative">
             <Input
               type="text"
