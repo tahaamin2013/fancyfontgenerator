@@ -15,15 +15,15 @@ export default function EmoticonPage() {
   return (
     <div className="container mx-auto py-8 px-4">
       <h1 className="text-3xl font-bold text-center mb-4">Emoticon Testuali</h1>
-      {/* <p className="text-center text-muted-foreground mb-2">
+      <p className="text-center text-muted-foreground mb-2">
       Sfoglia e copia faccine semplici per i tuoi messaggi.
       </p>
       <p className="text-center text-muted-foreground mb-8 text-sm">
       Trova simboli e faccine per rendere le chat più allegre.
-      </p> */}
+      </p>
 
       <ClientEmoticonPage />
-{/* 
+
       <div className="mt-12 max-w-2xl mx-auto text-center text-base leading-relaxed text-muted-foreground">
       <h2 className="text-xl font-semibold mb-4">Cos'è una emoticon?</h2>
       <p>
@@ -56,7 +56,7 @@ export default function EmoticonPage() {
         Tutti le capiscono. Mostrano come ti senti.<br />
         Rendono i messaggi più divertenti!
       </p>
-      </div> */}
+      </div>
     </div>
   )
 }
