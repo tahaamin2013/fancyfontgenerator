@@ -101,21 +101,27 @@ export default function SpecialCharactersPage() {
         </div>
 
 
-     <section className="mt-16 max-w-2xl mx-auto text-gray-700 dark:text-gray-200 text-lg leading-relaxed">
-        <h2 className="text-2xl font-semibold mb-4">Caratteri Speciali HTML: Guida Completa</h2>
-        <p>
-          Scopri la tabella completa dei caratteri speciali HTML più utilizzati per la creazione di siti web e documenti digitali. 
-          Consulta facilmente codici, simboli e descrizioni per inserire correttamente caratteri accentati, simboli matematici, lettere greche e segni tipografici nei tuoi progetti. 
-          Utilizza la funzione di ricerca per trovare rapidamente il carattere di cui hai bisogno e copia il codice HTML con un semplice clic.
-        </p>
-        <p className="mt-4">
-          Questa risorsa è ideale per sviluppatori, web designer, studenti e chiunque lavori con il codice HTML. 
-          Ottimizza la tua produttività e migliora l’accessibilità dei tuoi contenuti grazie a una panoramica aggiornata e dettagliata dei caratteri speciali disponibili.
-        </p>
-        <p className="mt-4">
-          Trova subito il simbolo giusto per le tue esigenze: lettere accentate, simboli di valuta, punteggiatura avanzata, segni matematici, lettere greche e molto altro!
-        </p>
-      </section>      </div>
+  <section className="mt-16 max-w-2xl mx-auto text-gray-700 dark:text-gray-200 text-lg leading-relaxed">
+  <h2 className="text-2xl font-semibold mb-4">Caratteri Speciali in HTML: Spiegazione Facile</h2>
+  <p>
+    I caratteri speciali sono simboli che non trovi sulla tastiera, come ❤️, €, © o lettere con accento tipo é.
+    In HTML, usiamo codici speciali per mostrarli nel sito web.
+  </p>
+  <p className="mt-4">
+    Questa pagina ti mostra una lista con tanti simboli utili. 
+    Puoi cercare il simbolo che ti serve e copiare il suo codice HTML con un solo clic.
+  </p>
+  <p className="mt-4">
+    È utile per chi fa siti web, ma anche per studenti e bambini curiosi. 
+    Così puoi scrivere pagine web più belle e chiare.
+  </p>
+  <p className="mt-4">
+    Troverai simboli come: lettere con accento, simboli di soldi (€), segni di matematica (+, −), lettere greche (α, β) e tanti altri.
+  </p>
+</section>
+
+      
+            </div>
 
     </div>
 
