@@ -1,7 +1,7 @@
-// please update required information
+
+
 const siteMetadata = {
   title: 'Generatore di Caratteri Speciali copia e incolla',
-  titleTemplate: '%s | Caratteri Speciali',
   keywords: [
     'caratteri speciali',
     'caratteri speciali per Instagram',
@@ -14,7 +14,6 @@ const siteMetadata = {
     'caratteri speciali per Snapchat',
     'generatore di caratteri speciali',
     'generatore di lettere in corsivo',
-    'copia e incolla',
   ],
   openGraph: {
     type: 'website',
