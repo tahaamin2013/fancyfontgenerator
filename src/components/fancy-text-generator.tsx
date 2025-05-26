@@ -275,29 +275,29 @@ export default function FancyTextGenerator() {
                 </p>
               </div>
               <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                Posso decorare anche messaggi o bio?
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                Certo! Puoi decorare qualsiasi testo: messaggi, bio, descrizioni, titoli e altro.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                Come creo uno stile personalizzato?
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                Usa il generatore qui sopra per trovare idee. Puoi anche combinare simboli diversi per creare una decorazione unica.
-                </p>
-              </div>
-              </div>
-              <div className="mt-10">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-                Generatore di nomi decorati online gratis
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300">
-                Il nostro generatore è gratis e non serve registrarsi. Provalo per trovare il tuo stile e rendere il tuo nome speciale su ogni piattaforma!
-              </p>
+ <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+Posso decorare anche messaggi o bio?
+</h2>
+<p className="text-gray-600 dark:text-gray-300">
+Certo! Puoi decorare qualsiasi testo: messaggi, bio, descrizioni, titoli e altro.
+</p>
+</div>
+<div>
+<h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+Come creo uno stile personalizzato?
+</h2>
+<p className="text-gray-600 dark:text-gray-300">
+Usa il generatore qui sopra per trovare idee. Puoi anche combinare simboli diversi per creare una decorazione unica.
+</p>
+</div>
+</div>
+<div className="mt-10">
+<h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+Generatore di nomi decorati online gratis
+</h2>
+<p className="text-gray-600 dark:text-gray-300">
+Il nostro generatore è gratis e non serve registrarsi. Provalo per trovare il tuo stile e rendere il tuo nome speciale su ogni piattaforma!
+</p>
               </div>
               <div className="mt-10">
               <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1 ml-4">
