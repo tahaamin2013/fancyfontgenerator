@@ -25,28 +25,31 @@ export default function EmoticonPage() {
       </p>
 
       <ClientEmoticonPage />
- <div className="mt-12 max-w-2xl mx-auto text-center text-base leading-relaxed text-muted-foreground">
+<div className="mt-12 max-w-2xl mx-auto text-center text-base leading-relaxed text-muted-foreground">
   <h2 className="text-xl font-semibold mb-4">Cosa sono le emoticon?</h2>
   <p>
-    Le emoticon sono faccine fatte con i tasti della tastiera. Le usi per mostrare come ti senti. Per esempio, <span className="font-mono">:)</span> vuol dire "sono felice", <span className="font-mono">:(</span> vuol dire "sono triste" e <span className="font-mono">&lt;3</span> vuol dire "ti voglio bene". Sono come emoji, ma fatte solo con lettere e simboli.
+    Le emoticon sono faccine fatte con i simboli della tastiera. Le usi per mostrare come ti senti.
+    Per esempio, <span className="font-mono">:)</span> vuol dire "sono felice", <span className="font-mono">:(</span> vuol dire "sono triste", e <span className="font-mono">&lt;3</span> vuol dire "ti voglio bene".
   </p>
-  
+
   <h2 className="text-lg font-semibold mt-6 mb-2">Come si usano?</h2>
   <ul className="list-disc list-inside mb-4 text-left mx-auto max-w-md">
-    <li>Guarda le emoticon qui sopra.</li>
-    <li>Premi il tasto <span className="font-semibold">Copia</span>.</li>
-    <li>Incolla la faccina dove vuoi: in un messaggio, in una chat o su un post.</li>
+    <li>Guarda la faccina che ti piace.</li>
+    <li>Clicca su <span className="font-semibold">Copia</span>.</li>
+    <li>Incollala nel messaggio o nella chat.</li>
   </ul>
-  
+
   <p>
-    Le emoticon rendono i tuoi messaggi più belli e divertenti. Non hai bisogno di scaricare nulla. Basta copiare e incollare! Puoi usarne tante diverse, come <span className="font-mono">:D</span> per dire "sto ridendo", <span className="font-mono">;)</span> per fare l’occhiolino, o <span className="font-mono">T_T</span> per quando sei triste e vuoi piangere.
+    Le emoticon rendono i messaggi più simpatici e divertenti. Non serve scaricare nulla. Basta copiare e incollare!
+    Puoi usarne tante: <span className="font-mono">:D</span> vuol dire "sto ridendo", <span className="font-mono">;)</span> vuol dire "occhiolino", e <span className="font-mono">T_T</span> vuol dire "sto piangendo".
   </p>
 
   <h2 className="text-lg font-semibold mt-6 mb-2">Perché usarle?</h2>
   <p>
-    Le emoticon sono facili, veloci e funzionano su tutti i telefoni e computer. Ti aiutano a dire come ti senti con un piccolo simbolo. Usa le emoticon per rendere i tuoi messaggi più simpatici!
+    Le emoticon sono facili da usare. Funzionano su tutti i telefoni e computer. Con un piccolo simbolo puoi dire come ti senti!
   </p>
 </div>
+
 
     </div>
   )
