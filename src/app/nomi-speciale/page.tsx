@@ -19,129 +19,129 @@ export default function Home() {
             >
               <div className="p-8">
                 <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
-              Come usare le decorazioni con caratteri speciali
+                  Come usare le decorazioni con caratteri speciali
                 </h2>
 
                 <div className="space-y-6">
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                  Cosa sono le decorazioni con caratteri speciali?
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Le decorazioni con caratteri speciali sono simboli e lettere che rendono il tuo nome più bello e originale. Puoi usarle per far risaltare il tuo testo online.
-                </p>
-              </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                      Cosa sono le decorazioni con caratteri speciali?
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Le decorazioni con caratteri speciali sono simboli e lettere strane che rendono il tuo nome più bello e diverso. Puoi usarle per far sembrare il tuo nome più simpatico e originale.
+                    </p>
+                  </div>
 
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Come usarle:</h2>
-                <ol className="list-decimal list-inside text-gray-600 dark:text-gray-300 space-y-2 ml-4">
-                  <li>Scrivi il tuo nome o nickname nel campo in alto.</li>
-                  <li>Scegli uno stile che ti piace.</li>
-                  <li>Clicca sullo stile per copiarlo.</li>
-                  <li>Incolla il nome dove vuoi usarlo.</li>
-                </ol>
-              </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Come si usano:</h2>
+                    <ol className="list-decimal list-inside text-gray-600 dark:text-gray-300 space-y-2 ml-4">
+                      <li>Scrivi il tuo nome o soprannome nel generatore qui sopra.</li>
+                      <li>Scegli lo stile che ti piace di più.</li>
+                      <li>Clicca sul nome per copiarlo.</li>
+                      <li>Incolla il nome dove vuoi: nei giochi, sui social o nelle chat.</li>
+                    </ol>
+                  </div>
 
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                  Dove puoi usare il tuo nome decorato:
-                </h2>
-                <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1 ml-4">
-                  <li>Profili social (Instagram, Facebook, Twitter)</li>
-                  <li>Nomi nei giochi (Fortnite, Brawl Stars, Minecraft)</li>
-                  <li>App di messaggi (WhatsApp, Discord, Telegram)</li>
-                  <li>Firme email</li>
-                  <li>Forum e comunità online</li>
-                </ul>
-              </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                      Dove puoi usare il tuo nome decorato:
+                    </h2>
+                    <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1 ml-4">
+                      <li>Profili social (Instagram, Facebook, TikTok)</li>
+                      <li>Nomi nei giochi (Fortnite, Minecraft, Roblox)</li>
+                      <li>Chat e messaggi (WhatsApp, Discord, Telegram)</li>
+                      <li>Firme nelle email</li>
+                      <li>Forum e gruppi online</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div className="p-8 pt-0">
                 <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
-              Domande frequenti sulle decorazioni di testo
+                  Domande semplici sulle decorazioni di testo
                 </h2>
                 <div className="space-y-6">
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                  Perché usare caratteri speciali per il nome?
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  I caratteri speciali rendono il tuo nome unico e facile da riconoscere. Ti aiutano a farti notare su social, giochi e chat.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                  I nomi decorati funzionano ovunque?
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Quasi tutte le piattaforme accettano questi caratteri. Se hai dubbi, prova a incollare il nome per vedere se funziona.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                  È sicuro usare questi caratteri?
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Sì, sono simboli Unicode standard. Non ci sono rischi per la sicurezza del tuo account.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                  Posso decorare anche messaggi o bio?
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Sì! Puoi decorare qualsiasi testo: messaggi, bio, descrizioni, titoli e altro.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-                  Come creo uno stile personalizzato?
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Usa il generatore qui sopra per trovare idee. Puoi anche combinare simboli diversi per creare una decorazione unica.
-                </p>
-              </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                      Perché usare caratteri speciali per il nome?
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      I caratteri speciali fanno sembrare il tuo nome unico e più facile da riconoscere. Così gli amici ti trovano subito!
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                      I nomi decorati funzionano ovunque?
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Quasi tutti i siti e le app accettano questi nomi. Se non funziona, prova a incollarlo per vedere se va bene.
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                      È sicuro usare questi caratteri?
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Sì, sono simboli normali che tutti possono usare. Non fanno male al tuo telefono o al tuo account.
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                      Posso decorare anche messaggi o bio?
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Certo! Puoi decorare qualsiasi testo: messaggi, bio, descrizioni, titoli e altro ancora.
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                      Come creo uno stile tutto mio?
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Usa il generatore qui sopra per provare tante idee. Puoi anche mischiare simboli diversi per creare un nome davvero speciale.
+                    </p>
+                  </div>
                 </div>
                 <div className="mt-10">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-                Generatore di nomi decorati online gratis
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300">
-                Il nostro generatore è gratis e non serve registrarsi. Provalo per trovare il tuo stile e rendere il tuo nome speciale su ogni piattaforma!
-              </p>
+                  <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                    Generatore di nomi decorati gratis
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Il nostro generatore è gratis e non serve registrarsi. Provalo per trovare il tuo stile e rendere il tuo nome speciale ovunque!
+                  </p>
                 </div>
                 <div className="mt-10">
-              <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1 ml-4">
-                <li>generatore caratteri speciali</li>
-                <li>decorazioni per nomi</li>
-                <li>nome decorato Instagram</li>
-                <li>nickname con simboli</li>
-                <li>testo stilizzato online</li>
-                <li>font speciali per social</li>
-                <li>simboli per nomi giochi</li>
-                <li>caratteri strani per WhatsApp</li>
-              </ul>
+                  <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1 ml-4">
+                    <li>generatore caratteri speciali</li>
+                    <li>decorazioni per nomi</li>
+                    <li>nome decorato Instagram</li>
+                    <li>nickname con simboli</li>
+                    <li>testo stilizzato online</li>
+                    <li>font speciali per social</li>
+                    <li>simboli per nomi giochi</li>
+                    <li>caratteri strani per WhatsApp</li>
+                  </ul>
                 </div>
                 <div className="mt-12">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
-                Perché scegliere il nostro generatore di decorazioni per nomi?
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Il nostro strumento ti aiuta a trasformare il tuo nome o nickname in una versione unica e bella, pronta per essere usata ovunque online. Puoi scegliere tra tanti stili e simboli diversi.
-              </p>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Tutti gli stili funzionano sulla maggior parte delle piattaforme. Non serve installare nulla o registrarsi. Basta inserire il testo, scegliere lo stile e copiarlo con un click. Aggiorniamo spesso il generatore con nuove idee.
-              </p>
-              <p className="text-gray-600 dark:text-gray-300">
-                Prova subito il generatore e scopri come un piccolo dettaglio può rendere il tuo nome davvero speciale!
-              </p>
+                  <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                    Perché usare il nostro generatore di nomi decorati?
+                  </h2>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Il nostro strumento ti aiuta a trasformare il tuo nome in una versione unica e bella, pronta per essere usata ovunque online. Puoi scegliere tra tanti stili e simboli diversi.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                    Tutti gli stili funzionano sulla maggior parte dei siti. Non serve installare nulla o registrarsi. Basta scrivere il nome, scegliere lo stile e copiarlo con un click.
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Prova subito il generatore e scopri come rendere il tuo nome davvero speciale!
+                  </p>
                 </div>
               </div>
             </div>
             <section className="mt-8 max-w-2xl mx-auto px-4 text-gray-700">
               <h2 className="text-2xl font-semibold mb-4">Cos'è un Nome Speciale?</h2>
               <p className="mb-4">
-                Un <strong>nome speciale</strong> è un nome con simboli e decorazioni. Lo rende unico e diverso dagli altri. Puoi usarlo sui social, nei giochi o nelle chat per farti notare.
+                Un <strong>nome speciale</strong> è un nome con simboli e decorazioni. Così il tuo nome diventa unico e diverso dagli altri. Puoi usarlo sui social, nei giochi o nelle chat per farti notare dagli amici.
               </p>
               <h3 className="text-xl font-semibold mb-2">Come funziona il generatore?</h3>
               <p className="mb-4">
