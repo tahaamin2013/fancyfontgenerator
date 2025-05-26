@@ -35,6 +35,8 @@ export const metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+  },
+  alternates: {
     canonical: siteMetadata.siteUrl,
   },
 };
