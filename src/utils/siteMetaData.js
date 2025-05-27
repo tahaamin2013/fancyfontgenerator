@@ -1,7 +1,7 @@
 
 
 const siteMetadata = {
-  title: 'Generatore di Caratteri Speciali copia e incolla',
+  title: '👍 Generatore di Caratteri Speciali Copia e Incolla Speciali Font',
   keywords: [
     'caratteri speciali',
     'caratteri speciali per Instagram',
@@ -17,7 +17,7 @@ const siteMetadata = {
   ],
   openGraph: {
     type: 'website',
-    title: 'Generatore di Caratteri Speciali copia e incolla',
+    title: '👍 Generatore di Caratteri Speciali Copia e Incolla Speciali Font',
     description: 'Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito. Copia e incolla con un click.',
     url: 'https://www.caratterispeciali10.it/',
     siteName: 'Caratteri Speciali',
