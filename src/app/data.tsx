@@ -2723,7 +2723,7 @@ export const fonts: Record<string, Record<string, string>> = {
     Y: "𝓨",
     Z: "𝓩",
   },
-  "old English": {
+  "old Font": {
     a: "𝔞",
     b: "𝔟",
     c: "𝔠",

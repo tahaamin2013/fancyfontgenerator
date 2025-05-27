@@ -248,13 +248,13 @@ export default function EmoticonSelector() {
             <div
               key={`wrapper-${index}`}
               className={cn(
-                "p-4 text-center cursor-pointer hover:bg-gray-100 transition-colors text-lg",
+                "p-0 md:p-4 text-center cursor-pointer hover:bg-gray-100 transition-colors text-lg",
                 "border-b border-gray-200",
                 selectedWrapper.id === wrapper.id && "bg-blue-100",
               )}
               onClick={() => handleSelectWrapper(wrapper)}
             >
-              <div className="bg-gray-50 py-3 rounded-md">{previewWithCurrentSelections(wrapper, "wrapper")}</div>
+              <div className="bg-gray-50 py-3 rounded-md text-xs md:text-xl">{previewWithCurrentSelections(wrapper, "wrapper")}</div>
             </div>
           ))}
         </div>
@@ -266,13 +266,13 @@ export default function EmoticonSelector() {
             <div
               key={`eyes-${index}`}
               className={cn(
-                "p-4 text-center cursor-pointer hover:bg-gray-100 transition-colors text-lg",
+                "p-0 md:p-4 text-center cursor-pointer hover:bg-gray-100 transition-colors text-lg",
                 "border-b border-gray-200",
                 selectedEyes === eyes && "bg-blue-100",
               )}
               onClick={() => handleSelectEyes(eyes)}
             >
-              <div className="bg-gray-50 py-3 rounded-md">{previewWithCurrentSelections(eyes, "eyes")}</div>
+              <div className="bg-gray-50 py-3 rounded-md text-xs md:text-xl">{previewWithCurrentSelections(eyes, "eyes")}</div>
             </div>
           ))}
         </div>
@@ -284,13 +284,13 @@ export default function EmoticonSelector() {
             <div
               key={`eyebrows-${index}`}
               className={cn(
-                "p-4 text-center cursor-pointer hover:bg-gray-100 transition-colors text-lg",
+                "p-0 md:p-4 text-center cursor-pointer hover:bg-gray-100 transition-colors text-lg",
                 "border-b border-gray-200",
                 selectedEyebrows === eyebrows && "bg-blue-100",
               )}
               onClick={() => handleSelectEyebrows(eyebrows)}
             >
-              <div className="bg-gray-50 py-3 rounded-md">{previewWithCurrentSelections(eyebrows, "eyebrows")}</div>
+              <div className="bg-gray-50 py-3 rounded-md text-xs md:text-xl">{previewWithCurrentSelections(eyebrows, "eyebrows")}</div>
             </div>
           ))}
         </div>
@@ -302,13 +302,13 @@ export default function EmoticonSelector() {
             <div
               key={`noseMouth-${index}`}
               className={cn(
-                "p-4 text-center cursor-pointer hover:bg-gray-100 transition-colors text-lg",
+                "p-0 md:p-4 text-center cursor-pointer hover:bg-gray-100 transition-colors text-lg",
                 "border-b border-gray-200",
                 selectedNoseMouth === noseMouth && "bg-blue-100",
               )}
               onClick={() => handleSelectNoseMouth(noseMouth)}
             >
-              <div className="bg-gray-50 py-3 rounded-md">{previewWithCurrentSelections(noseMouth, "noseMouth")}</div>
+              <div className="bg-gray-50 py-3 rounded-md text-xs md:text-xl">{previewWithCurrentSelections(noseMouth, "noseMouth")}</div>
             </div>
           ))}
         </div>

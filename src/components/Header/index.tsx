@@ -31,7 +31,7 @@ export const mymenuitems: MenuItem[] = [
   { id: "carratteri-speciali", label: "Caratteri Speciali", path: "/carratteri-speciali" },
   { id: "lista-de-atalhos-do-teclado-para", label: "Scorciatoie Alt Code", path: "/lista-de-atalhos-do-teclado-para" },
   { id: "text-characters-emoticons", label: "Emoticons", path: "/text-characters-emoticons" },
-  { id: "special-character-table-in-html", label: "HTML Table", path: "/special-character-table-in-html" },
+  { id: "special-character-table-in-html", label: "Tabella HTML", path: "/special-character-table-in-html" },
   { id: "nomi-speciale", label: "Nomi Speciali", path: "/nomi-speciale" },
   { id: "generatore-testo-corsivo", label: "Testo Corsivo", path: "/generatore-testo-corsivo" },
   { id: "emojis", label: "Emojis", path: "/emojis" },
@@ -95,7 +95,7 @@ export default function Header() {
                   variant="light"
                   className="text-sm md:text-base px-2 flex items-center gap-1"
                 >
-                  Social Media
+                  Mezzi Sociali
                   <ChevronDown size={16} />
                 </Button>
               </DropdownTrigger>
@@ -123,7 +123,7 @@ export default function Header() {
 
           {/* Dropdown section in mobile menu */}
           <NavbarMenuItem>
-            <p className="font-bold text-xl mt-4 mb-1">Social Media</p>
+            <p className="font-bold text-xl mt-4 mb-1">Mezzi Sociali</p>
           </NavbarMenuItem>
           {dropdownItems.map((item, index) => (
             <NavbarMenuItem key={`dropdown-${index}`}>
