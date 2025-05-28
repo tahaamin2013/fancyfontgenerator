@@ -50,14 +50,14 @@ const FancyTextGenerator: React.FC = () => {
           >
             <div className="inline-flex items-center justify-center p-1 mb-6 rounded-full bg-gradient-to-r from-purple-500 to-pink-500">
               <div className="px-4 py-1 rounded-full bg-white dark:bg-gray-900 text-purple-600 dark:text-purple-400 text-sm font-medium">
-                Generatore Lettere Corsive e Caratteri Speciali
+                Generatore Lettere Corsive e Caratteri Speciali 
               </div>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
               Lettere in Corsivo e Caratteri Speciali
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl bg-bl mx-auto">
-              Genera lettere corsive, alfabeto in corsivo maiuscolo e minuscolo, caratteri speciali da tastiera per Instagram, tatuaggi e social media. Copia e incolla facilmente!
+              Genera lettere corsive, alfabeto in corsivo maiuscolo e minuscolo, caratteri speciali da tastiera per Instagram, tatuaggi e social media. Copia e incolla facilmente!, fonts corsivo
             </p>
           </motion.div>
 
