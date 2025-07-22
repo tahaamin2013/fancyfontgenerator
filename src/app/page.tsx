@@ -33,6 +33,7 @@ import {
   Royal_Bear_Style,
 } from "./data"
 import EmoticonSelector from "../components/Specialchar"
+import Head from "next/head"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -83,7 +84,55 @@ const FancyTextGenerator: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-  
+     <Head>
+
+        {/* WebSite Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Caratteri Speciali 10",
+              "url": "https://www.caratterispeciali10.it",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.caratterispeciali10.it/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+
+        {/* Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Caratteri Speciali 10",
+              "url": "https://www.caratterispeciali10.it",
+              "logo": "https://www.caratterispeciali10.it/logo.png"
+            })
+          }}
+        />
+
+        {/* WebPage Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Caratteri Speciali 10 - Home",
+              "url": "https://www.caratterispeciali10.it",
+              "description": "Generatore di caratteri speciali da tastiera, simboli eleganti per Instagram, Facebook, Fortnite, WhatsApp e molto altro.",
+              "inLanguage": "it"
+            })
+          }}
+        />
+      </Head>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
