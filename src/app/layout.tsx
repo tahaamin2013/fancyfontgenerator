@@ -45,6 +45,51 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
+          <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "WebSite",
+                      "name": "Caratteri Speciali 10",
+                      "url": "https://www.caratterispeciali10.it",
+                      "potentialAction": {
+                        "@type": "SearchAction",
+                        "target": "https://www.caratterispeciali10.it/search?q={search_term_string}",
+                        "query-input": "required name=search_term_string"
+                      }
+                    })
+                  }}
+                />
+        
+                {/* Organization Schema */}
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "Organization",
+                      "name": "Caratteri Speciali 10",
+                      "url": "https://www.caratterispeciali10.it",
+                      "logo": "https://www.caratterispeciali10.it/logo.png"
+                    })
+                  }}
+                />
+        
+                {/* WebPage Schema */}
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "WebPage",
+                      "name": "Caratteri Speciali 10 - Home",
+                      "url": "https://www.caratterispeciali10.it",
+                      "description": "Generatore di caratteri speciali da tastiera, simboli eleganti per Instagram, Facebook, Fortnite, WhatsApp e molto altro.",
+                      "inLanguage": "it"
+                    })
+                  }}
+                />
         <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
      crossOrigin="anonymous"></script>
