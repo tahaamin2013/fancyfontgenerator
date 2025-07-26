@@ -323,9 +323,9 @@ const FancyTextGenerator: React.FC = () => {
 
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Cosa sono i caratteri speciali?
-                  </h2>
+                  </h3>
                   <p className="text-gray-600 dark:text-gray-300">
                     I caratteri speciali sono simboli che non trovi sulla tastiera normale. Sono lettere o segni
                     particolari presi da un sistema chiamato Unicode. Con questi simboli puoi creare testi diversi,
@@ -335,9 +335,9 @@ const FancyTextGenerator: React.FC = () => {
                 </div>
 
                 <div>
-                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Come si usano i caratteri speciali?
-                  </h2>
+                  </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-3">
                     È molto semplice. Basta scrivere una frase nel nostro convertitore, e subito vedrai il testo in
                     tanti stili diversi: corsivo, gotico, elegante, scritto a mano o anche stile aesthetic. Ti basta
@@ -351,9 +351,9 @@ const FancyTextGenerator: React.FC = () => {
                 </div>
 
                 <div>
-                  <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Dove posso usare questi caratteri?
-                  </h2>
+                  </h3>
                   <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
                     <li>
                       Post di Instagram con <strong>caratteri speciali instagram</strong>

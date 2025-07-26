@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import { Toaster } from "@/src/components/ui/sonner"
 
 import siteMetadata from "../utils/siteMetaData";
+import Footer from "../components/Header/Footer";
 const Header = lazy(() => import("@/src/components/Header"));
 const NextThemeProvider = lazy(() => import("@/src/providers/theme-provider"));
 
@@ -96,12 +97,13 @@ export default function RootLayout({
       </head>
       <body className={cx("font-EuclidCircularB", "font-mr")}>
         <NextThemeProvider>
-          <Header />
+          <Header /> 
           <Providers>
                     <Toaster />
             {children}
             <ToastContainer />
           </Providers>
+          <Footer />
         </NextThemeProvider>
       </body>
     </html>
