@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10 text-gray-800">
-      <h1 className="text-3xl font-bold mb-2">📄 Informativa sulla Privacy</h1>
+      <h1 className="text-3xl font-bold mb-2">Informativa sulla Privacy</h1>
       <p className="text-sm text-gray-500 mb-8">Ultimo aggiornamento: 27 Luglio 2025</p>
 
       <section className="mb-6">
