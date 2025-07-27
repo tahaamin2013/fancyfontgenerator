@@ -1,11 +1,22 @@
 import Link from "next/link"
+import { Facebook, Twitter, Instagram, Mail, Heart } from "lucide-react"
 import Logo from "./Logo"
 
-export default function Footer() {
+/**
+ * Componente React che rappresenta il footer moderno del sito.
+ *
+ * @remarks
+ * Il footer include la sezione del brand con logo e social, link rapidi a strumenti e risorse,
+ * e una sezione inferiore con copyright, policy e credits.
+ * Lo stile è responsive e supporta modalità chiara/scura.
+ *
+ * @returns {JSX.Element} Il footer del sito web.
+ */
+export default function ModernFooter() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 ">
+    <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 border-t">
       <div className="container mx-auto px-4 py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-8">
@@ -13,9 +24,38 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Logo />
             <p className="text-gray-600 dark:text-gray-400 mt-4 text-sm leading-relaxed">
-              Generatore di font e caratteri speciali per personalizzare testi, nomi e messaggi sui social. Scopri strumenti creativi per rendere unici i tuoi contenuti online.
+                  Crea e copia caratteri speciali e lettere in corsivo per i tuoi social media. Facile da usare, veloce e gratuito. Copia e incolla con un click.
             </p>
-   
+            <div className="flex space-x-4 mt-6">
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200"
+                aria-label="Twitter"
+              >
+                <Twitter className="h-5 w-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-200"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200"
+                aria-label="Email"
+              >
+                <Mail className="h-5 w-5" />
+              </Link>
+            </div>
           </div>
 
           {/* Links Sections */}
@@ -168,6 +208,53 @@ export default function Footer() {
           </div>
         </div>
 
+
+        {/* Bottom Footer */}
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              © {currentYear} carratteri speciali. Tutti i diritti riservati.
+            </p>
+            <div className="flex items-center space-x-4 text-sm">
+              <Link
+                href="/privacy"
+                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/termini-e-condizioni"
+                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              >
+                Termini e Condizioni
+              </Link>
+              <Link
+                href="/disclaimer"
+                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              >
+                Disclaimer
+              </Link>
+              <Link
+              href="/contattaci"
+              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              >
+              Contattaci
+              </Link>
+              <Link
+                href="/chi-siamo"
+                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              >
+                Chi siamo
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-1 text-sm text-gray-600 dark:text-gray-400">
+            <span>Fatto con </span>
+            <Heart className="h-4 w-4 text-red-500 fill-current" />
+            <span>in Italia</span>
+          </div>
+        </div>
       </div>
     </footer>
   )
