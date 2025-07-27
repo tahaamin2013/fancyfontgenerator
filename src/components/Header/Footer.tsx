@@ -73,7 +73,7 @@ export default function ModernFooter() {
                 <ul className="space-y-3">
                   <li>
                     <Link
-                      href="/carratteri-speciali"
+                      href="/caratteri-speciali"
                       className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 text-sm"
                     >
                       Caratteri Speciali

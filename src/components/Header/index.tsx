@@ -66,7 +66,7 @@ export default function Header() {
               </Button>
             </DropdownTrigger>
             <DropdownMenu aria-label="Strumenti Testo">
-              <DropdownItem href="/carratteri-speciali">Caratteri Speciali</DropdownItem>
+              <DropdownItem href="/caratteri-speciali">Caratteri Speciali</DropdownItem>
               <DropdownItem href="/nomi-speciale">Nomi Speciali</DropdownItem>
               <DropdownItem href="/generatore-testo-corsivo">Testo Corsivo</DropdownItem>
               <DropdownItem href="/font-corsivo">Font Corsivo</DropdownItem>
@@ -134,7 +134,7 @@ export default function Header() {
             <p className="font-bold text-xl mt-4 mb-1">Strumenti Testo</p>
           </NavbarMenuItem>
           {[
-            { label: "Caratteri Speciali", path: "/carratteri-speciali" },
+            { label: "Caratteri Speciali", path: "/caratteri-speciali" },
             { label: "Nomi Speciali", path: "/nomi-speciale" },
             { label: "Testo Corsivo", path: "/generatore-testo-corsivo" },
             { label: "Font Corsivo", path: "/font-corsivo" },

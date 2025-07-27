@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "copia e incolla simboli", "calligrafia in corsivo", "font Instagram"
   ],
   alternates: {
-    canonical: "https://www.caratterispeciali10.it/carratteri-speciali",
+    canonical: "https://www.caratterispeciali10.it/caratteri-speciali",
   },
   metadataBase: new URL("https://www.caratterispeciali10.it"),
   openGraph: {
