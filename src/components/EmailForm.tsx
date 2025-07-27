@@ -174,12 +174,7 @@ export default function ContactForm() {
             </div>
 
             {/* Debug Info */}
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-              <h4 className="font-semibold text-yellow-800 mb-2">🔧 Debug Info</h4>
-              <p className="text-sm text-yellow-700">
-                Se il form non funziona, apri la Console del browser (F12) per vedere i dettagli dell'errore.
-              </p>
-            </div>
+        
           </div>
 
           {/* Right Grid - Contact Form */}
