@@ -18,9 +18,9 @@ export default function ModernFooter() {
 
   return (
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 border-t">
-      <div className="container mx-auto px-4 py-12">
+      <div className="  mx-auto pt-12">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 mb-8">
+        <div className="grid px-7 grid-cols-1 lg:grid-cols-5 gap-8 mb-8">
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <Logo />
@@ -215,7 +215,7 @@ export default function ModernFooter() {
 
 
         {/* Bottom Footer */}
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="flex  bg-stone-200 px-6  py-5 flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
             <p className="text-sm text-gray-600 dark:text-gray-400">
               © {currentYear} carratteri speciali. Tutti i diritti riservati.
