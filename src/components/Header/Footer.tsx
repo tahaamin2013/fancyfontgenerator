@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Mail, Heart } from "lucide-react"
 import Logo from "./Logo"
+import { BsPinterest } from "react-icons/bs"
 
 /**
  * Componente React che rappresenta il footer moderno del sito.
@@ -28,32 +29,29 @@ export default function ModernFooter() {
             </p>
             <div className="flex space-x-4 mt-6">
               <Link
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61578756212680"
+                target="_blank"
                 className="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
+                href="https://x.com/CaratteriSpe"
+                                target="_blank"
+
                 className="text-gray-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors duration-200"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </Link>
               <Link
-                href="#"
-                className="text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors duration-200"
-                aria-label="Instagram"
+                href="https://www.pinterest.com/caratterispeciali/"
+                target="_blank"
+                className="text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors duration-200"
+                aria-label="Pinterest"
               >
-                <Instagram className="h-5 w-5" />
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200"
-                aria-label="Email"
-              >
-                <Mail className="h-5 w-5" />
+                <BsPinterest className="h-5 w-5" />
               </Link>
             </div>
           </div>
