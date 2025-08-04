@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Mail, Heart } from "lucide-react"
 import Logo from "./Logo"
-import { BsPinterest } from "react-icons/bs"
+import { BsPinterest, BsSubstack } from "react-icons/bs"
 
 /**
  * Componente React che rappresenta il footer moderno del sito.
@@ -54,12 +54,21 @@ export default function ModernFooter() {
                 <BsPinterest className="h-5 w-5" />
               </Link>
               <Link
+                href="https://substack.com/@caratterispeciali"
+                target="_blank"
+                className="text-gray-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors duration-200"
+                aria-label="Substack Newsletter"
+              >
+            <BsSubstack className="h-5 w-5" />
+              </Link>
+              <Link
                 href="/contattaci"
                 className="text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-200"
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
               </Link>
+
             </div>
           </div>
 
