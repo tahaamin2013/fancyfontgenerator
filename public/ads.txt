@@ -1,1 +1,4 @@
 google.com, pub-9571755808195636, DIRECT, f08c47fec0942fa0  
+
+# Ezoic ads.txt entries
+https://srv.adstxtmanager.com/19390/caratterispeciali10.it

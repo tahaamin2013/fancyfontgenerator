@@ -5,7 +5,7 @@ import { cx } from "@/src/utils";
 import { Providers } from "./providers";
 import { ToastContainer } from "react-toastify";
 import { Toaster } from "@/src/components/ui/sonner"
-
+import Script from "next/script";
 import siteMetadata from "../utils/siteMetaData";
 import Footer from "../components/Header/Footer";
 const Header = lazy(() => import("@/src/components/Header"));
@@ -46,6 +46,27 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
+    {/* Ezoic Privacy Scripts (MUST be first) */}
+        <Script
+          src="https://cmp.gatekeeperconsent.com/min.js"
+          data-cfasync="false"
+        ></Script>
+        <Script
+          src="https://the.gatekeeperconsent.com/cmp.min.js"
+          data-cfasync="false"
+        ></Script>
+        <meta name="ezoic-site-verification" content="GCIhSdbzVHwP7bOXg1afLDWrNJbuGw" />
+
+        {/* Ezoic Header Script */}
+        <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.ezstandalone = window.ezstandalone || {};
+              ezstandalone.cmd = ezstandalone.cmd || [];
+            `,
+          }}
+        />
           <script
                   type="application/ld+json"
                   dangerouslySetInnerHTML={{
