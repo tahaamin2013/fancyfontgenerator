@@ -33,6 +33,7 @@ import {
   Royal_Bear_Style,
 } from "./data"
 import EmoticonSelector from "../components/Specialchar"
+import Head from "next/head"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -91,7 +92,11 @@ const FancyTextGenerator: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-
+      <Head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
+     crossOrigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
+    </Head>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
