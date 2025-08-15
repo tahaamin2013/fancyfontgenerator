@@ -46,11 +46,6 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
-        {/* Ezoic Header Script */}
-        <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
-     crossOrigin="anonymous"></script>
-     <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
 
         <script
           dangerouslySetInnerHTML={{
@@ -105,9 +100,6 @@ export default function RootLayout({
                     })
                   }}
                 />
-        <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
-     crossOrigin="anonymous"></script>
       </head>
       <body className={cx("font-EuclidCircularB", "font-mr")}>
         <NextThemeProvider>
