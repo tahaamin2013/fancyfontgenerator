@@ -33,8 +33,6 @@ import {
   Royal_Bear_Style,
 } from "./data"
 import EmoticonSelector from "../components/Specialchar"
-import Head from "next/head"
-import EzoicAd from "../components/EzoicAd"
 
 const combinedCharMap: any = {
   ...fonts,
