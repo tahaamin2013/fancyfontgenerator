@@ -34,6 +34,7 @@ import {
 } from "./data"
 import EmoticonSelector from "../components/Specialchar"
 import Head from "next/head"
+import EzoicAd from "../components/EzoicAd"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -71,6 +72,14 @@ const FancyTextGenerator: React.FC = () => {
   const [inputText, setInputText] = useState<string>("")
   const [visibleFonts, setVisibleFonts] = useState<number>(20)
 
+  useEffect(() => {
+    // Only run if ezstandalone is available (e.g., after ad script loads)
+    if (typeof window !== "undefined" && (window as any).ezstandalone && (window as any).ezstandalone.cmd) {
+      (window as any).ezstandalone.cmd.push(function () {
+        (window as any).ezstandalone.showAds(101);
+      });
+    }
+  }, []);
 
   const handleShowMoreFonts = () => {
     setVisibleFonts((prevVisibleFonts) => prevVisibleFonts + 20)
@@ -96,6 +105,7 @@ const FancyTextGenerator: React.FC = () => {
               <div className="px-4 py-1 rounded-full bg-white dark:bg-gray-900 text-purple-600 dark:text-purple-400 text-sm font-medium">
                 Generatore di Caratteri Speciali
               </div>
+              
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
               Caratteri Speciali per Font Eleganti
@@ -373,7 +383,8 @@ const FancyTextGenerator: React.FC = () => {
             </div>
           </motion.div>
         </div>
-    
+    <div id="ezoic-pub-ad-placeholder-101"></div>
+
       <ToastContainer position="top-right" autoClose={1000} hideProgressBar theme="colored" />
 
     </div>

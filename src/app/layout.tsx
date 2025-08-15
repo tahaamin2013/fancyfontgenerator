@@ -46,19 +46,12 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
-    {/* Ezoic Privacy Scripts (MUST be first) */}
-        <Script
-          src="https://cmp.gatekeeperconsent.com/min.js"
-          data-cfasync="false"
-        ></Script>
-        <Script
-          src="https://the.gatekeeperconsent.com/cmp.min.js"
-          data-cfasync="false"
-        ></Script>
-        <meta name="ezoic-site-verification" content="GCIhSdbzVHwP7bOXg1afLDWrNJbuGw" />
-
         {/* Ezoic Header Script */}
         <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
+     crossOrigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
