@@ -92,11 +92,7 @@ const FancyTextGenerator: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-purple-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-      <Head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
-     crossOrigin="anonymous"></script>
-     <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
-    </Head>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -438,13 +434,19 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
   }
 
   return (
+    <>
+          <Head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
+     crossOrigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
+    </Head>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
       onClick={handleCopy}
       className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border border-gray-100 dark:border-gray-700"
-    >
+      >
       <div className="flex items-center justify-between p-4">
         <div className="flex-1 min-w-0">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white truncate">{fancyText}</h2>
@@ -480,6 +482,7 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
       <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-purple-500 to-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
   
     </motion.div>
+            </>
   )
 }
 
