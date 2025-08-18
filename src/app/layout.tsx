@@ -50,7 +50,20 @@ export default function RootLayout({
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
      crossOrigin="anonymous"></script>
      <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
-
+  <Script
+          src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+          strategy="afterInteractive"
+        />
+        <Script id="onesignal-init" strategy="afterInteractive">
+          {`
+            window.OneSignalDeferred = window.OneSignalDeferred || [];
+            OneSignalDeferred.push(async function(OneSignal) {
+              await OneSignal.init({
+                appId: "8bc21ce9-6fec-4b2a-9e52-1b42a0f91280",
+              });
+            });
+          `}
+        </Script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
