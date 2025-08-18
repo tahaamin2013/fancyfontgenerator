@@ -5,7 +5,7 @@ import { useState, useEffect, type ChangeEvent } from "react"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { Input } from "../components/ui/input"
-import { Copy, Sparkles, ChevronDown, Star } from "lucide-react"
+import { Copy, Sparkles, ChevronDown } from "lucide-react"
 import { motion } from "framer-motion"
 
 import {
@@ -33,7 +33,6 @@ import {
   Royal_Bear_Style,
 } from "./data"
 import EmoticonSelector from "../components/Specialchar"
-import Head from "next/head"
 import Script from "next/script"
 
 const combinedCharMap: any = {
@@ -436,7 +435,7 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
 
   return (
     <>
-          <Head>
+          <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
      crossOrigin="anonymous"></script>
      <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
@@ -454,7 +453,7 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
             });
           `}
         </Script>
-    </Head>
+    </head>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

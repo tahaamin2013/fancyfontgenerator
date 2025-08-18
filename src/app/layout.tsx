@@ -8,7 +8,6 @@ import { Toaster } from "@/src/components/ui/sonner"
 import Script from "next/script";
 import siteMetadata from "../utils/siteMetaData";
 import Footer from "../components/Header/Footer";
-import Head from "next/head";
 const Header = lazy(() => import("@/src/components/Header"));
 const NextThemeProvider = lazy(() => import("@/src/providers/theme-provider"));
 
@@ -46,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it">
-      <Head>
+      <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
      crossOrigin="anonymous"></script>
      <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
@@ -117,7 +116,7 @@ export default function RootLayout({
                     })
                   }}
                 />
-      </Head>
+      </head>
       <body className={cx("font-EuclidCircularB", "font-mr")}>
         <NextThemeProvider>
           <Header /> 
