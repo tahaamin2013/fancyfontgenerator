@@ -49,7 +49,7 @@ export default function RootLayout({
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9571755808195636"
      crossOrigin="anonymous"></script>
      <meta name="google-adsense-account" content="ca-pub-9571755808195636"/>
-  <Script
+     <Script
           src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
           strategy="afterInteractive"
         />
