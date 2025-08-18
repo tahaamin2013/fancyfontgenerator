@@ -59,13 +59,7 @@ export default function RootLayout({
             OneSignalDeferred.push(async function(OneSignal) {
               await OneSignal.init({
                 appId: "8bc21ce9-6fec-4b2a-9e52-1b42a0f91280",
-                 promptOptions: {
-        slidedown: {
-          enabled: true,
-          autoPrompt: true, // ✅ ye turant popup show karega
-          timeDelay: 1, // ✅ 0 sec matlab instantly show hoga
-          pageViews: 0 // ✅ 0 matlab bina wait kare turant
-        }
+                
               });
             });
           `}
