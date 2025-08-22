@@ -1,5 +1,5 @@
 import siteMetadata from "../utils/siteMetaData"
-import FancyTextGenerator from "../components/fancy-text-generator";
+import FancyTextGenerator from "../components/Homepage";
 
 export const metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
