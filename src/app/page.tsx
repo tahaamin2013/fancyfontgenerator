@@ -5,9 +5,37 @@ import { useState, useEffect, type ChangeEvent } from "react"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { Input } from "../components/ui/input"
+import siteMetadata from "../utils/siteMetaData";
 import { Copy, Sparkles, ChevronDown } from "lucide-react"
 import { motion } from "framer-motion"
 
+export const metadata = {
+  metadataBase: new URL(siteMetadata.siteUrl),
+title: siteMetadata.title,
+  description: siteMetadata.description,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: siteMetadata.siteUrl,
+  },
+};
 import {
   fonts,
   Dot_Saparater,

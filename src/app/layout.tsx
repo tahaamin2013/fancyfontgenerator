@@ -6,38 +6,10 @@ import { Providers } from "./providers";
 import { ToastContainer } from "react-toastify";
 import { Toaster } from "@/src/components/ui/sonner"
 import Script from "next/script";
-import siteMetadata from "../utils/siteMetaData";
 import Footer from "../components/Header/Footer";
 const Header = lazy(() => import("@/src/components/Header"));
 const NextThemeProvider = lazy(() => import("@/src/providers/theme-provider"));
 
-export const metadata = {
-  metadataBase: new URL(siteMetadata.siteUrl),
-title: siteMetadata.title,
-  description: siteMetadata.description,
-  openGraph: {
-    title: siteMetadata.title,
-    description: siteMetadata.description,
-    url: siteMetadata.siteUrl,
-    siteName: siteMetadata.title,
-    locale: "en_US",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  alternates: {
-    canonical: siteMetadata.siteUrl,
-  },
-};
 export default function RootLayout({
   children,
 }: {
