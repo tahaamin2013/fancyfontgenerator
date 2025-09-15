@@ -181,7 +181,7 @@ const FancyTextGenerator: React.FC = () => {
             {(index + 1) % 7 === 0 && (
               <>
                 {/* Desktop Banner Ad */}
-                <div className="my-4 flex justify-center">
+                <div className="my-4 flex overflow-x-scroll justify-center">
                   <div id={`ad-container-desktop-${index}`} />
                   <Script
                     id={`adsterra-desktop-${index}`}
