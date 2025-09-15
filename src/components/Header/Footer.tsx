@@ -3,6 +3,7 @@ import { Facebook, Twitter, Instagram, Mail, Heart } from "lucide-react"
 import Logo from "./Logo"
 import { BsPinterest, BsSubstack } from "react-icons/bs"
 import Script from "next/script"
+import ResponsiveAd from "../ResponsiveAd"
 
 /**
  * Componente React che rappresenta il footer moderno del sito.
@@ -20,32 +21,9 @@ export default function ModernFooter() {
 
   return (
  <>
-  <div className="my-4 flex justify-center">
-      <div id="ad-container-728x90"></div>
+ <ResponsiveAd desktopKey="8fcc3f83c250f7ce7879dbd892cfc63b" mobileKey="8fcc3f83c250f7ce7879dbd892cfc63b" />
 
-      <Script
-        id="adsterra-banner"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            var atOptions = {
-              'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-              'format' : 'iframe',
-              'height' : 90,
-              'width' : 728,
-              'params' : {}
-            };
-            var container = document.getElementById("ad-container-728x90");
-            if (container) {
-              var script = document.createElement("script");
-              script.type = "text/javascript";
-              script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-              container.appendChild(script);
-            }
-          `,
-        }}
-      />
-    </div>
+
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 border-t">
       <div className="  mx-auto pt-12">
         {/* Main Footer Content */}
