@@ -181,7 +181,7 @@ const FancyTextGenerator: React.FC = () => {
             {(index + 1) % 7 === 0 && (
               <>
                 {/* Desktop Banner Ad */}
-                <div className="my-4 hidden md:flex justify-center">
+                <div className="my-4 flex justify-center">
                   <div id={`ad-container-desktop-${index}`} />
                   <Script
                     id={`adsterra-desktop-${index}`}
@@ -207,32 +207,6 @@ const FancyTextGenerator: React.FC = () => {
                   />
                 </div>
 
-                {/* Mobile Banner Ad */}
-                <div className="my-4 flex md:hidden justify-center">
-                  <div id={`ad-container-mobile-${index}`} />
-                  <Script
-                    id={`adsterra-mobile-${index}`}
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                      __html: `
-                        var atOptions = {
-                          'key' : '01eb145a7a8f8ac565cac8ed8950228e',
-                          'format' : 'iframe',
-                          'height' : 50,
-                          'width' : 320,
-                          'params' : {}
-                        };
-                        var container = document.getElementById("ad-container-mobile-${index}");
-                        if (container) {
-                          var script = document.createElement("script");
-                          script.type = "text/javascript";
-                          script.src = "//www.highperformanceformat.com/01eb145a7a8f8ac565cac8ed8950228e/invoke.js";
-                          container.appendChild(script);
-                        }
-                      `,
-                    }}
-                  />
-                </div>
               </>
             )}
           </div>
