@@ -20,7 +20,7 @@ export default function ModernFooter() {
 
   return (
  <>
-  <div className="my-4 flex hidden md:block justify-center">
+  <div className="my-4 md:flex hidden justify-center">
       <div id="ad-container-728x90"></div>
 
       <Script
