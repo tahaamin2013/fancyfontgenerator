@@ -29,7 +29,7 @@ export default function ResponsiveAd({ desktopKey, mobileKey }: Props) {
               'key' : '${isMobile ? mobileKey : desktopKey}',
               'format' : 'iframe',
               'height' : ${isMobile ? 50 : 90},
-              'width' : ${isMobile ? 320 : 728},
+              'width' : ${isMobile ? 120 : 428},
               'params' : {}
             };
             var container = document.getElementById("ad-container");
