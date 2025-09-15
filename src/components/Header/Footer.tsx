@@ -21,25 +21,12 @@ export default function ModernFooter() {
   return (
  <>
  <div className="my-4 flex justify-center">
-      {/* Ad container */}
-      <div id="ad-container-728x90" />
-
-      {/* Config Script */}
-      <Script
-        id="highperformanceformat-config"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            atOptions = {
-              'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-              'format' : 'iframe',
-              'height' : 90,
-              'width' : 728,
-              'params' : {}
-            };
-            document.write('<scr' + 'ipt type="text/javascript" src="//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js"></scr' + 'ipt>');
-          `,
-        }}
+      <iframe
+        src="//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js"
+        width="728"
+        height="90"
+        frameBorder="0"
+        scrolling="no"
       />
     </div>
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 border-t">
