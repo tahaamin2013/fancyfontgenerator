@@ -178,26 +178,6 @@ const FancyTextGenerator: React.FC = () => {
                 ))}
             </div>
 
-<Script
-  id="highperformanceformat-ads"
-  strategy="afterInteractive"
-  dangerouslySetInnerHTML={{
-    __html: `
-      atOptions = {
-        'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
-      };
-    `,
-  }}
-/>
-<Script
-  src="//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js"
-  strategy="afterInteractive"
-/>
-
             {visibleFonts < Object.keys(combinedCharMap).length && (
               <div className="flex justify-center mt-10">
                 <button

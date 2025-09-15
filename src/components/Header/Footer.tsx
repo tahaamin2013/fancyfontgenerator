@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Facebook, Twitter, Instagram, Mail, Heart } from "lucide-react"
 import Logo from "./Logo"
 import { BsPinterest, BsSubstack } from "react-icons/bs"
+import Script from "next/script"
 
 /**
  * Componente React che rappresenta il footer moderno del sito.
@@ -16,7 +17,28 @@ import { BsPinterest, BsSubstack } from "react-icons/bs"
 export default function ModernFooter() {
   const currentYear = new Date().getFullYear()
 
+
   return (
+ <>
+ <Script
+  id="highperformanceformat-ads"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: `
+      atOptions = {
+        'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    `,
+  }}
+/>
+<Script
+  src="//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js"
+  strategy="afterInteractive"
+/>
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 border-t">
       <div className="  mx-auto pt-12">
         {/* Main Footer Content */}
@@ -270,6 +292,6 @@ export default function ModernFooter() {
           </div>
         </div>
       </div>
-    </footer>
+    </footer></>
   )
 }
