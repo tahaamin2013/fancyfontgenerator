@@ -89,6 +89,8 @@ export default function RootLayout({
                     })
                   }}
                 />
+
+                <script type='text/javascript' src='//pl27647283.revenuecpmgate.com/ac/2b/2d/ac2b2da4217b85c286d81681d2a56188.js'></script>
       </head>
       <body className={cx("font-EuclidCircularB", "font-mr")}>
         <NextThemeProvider>
