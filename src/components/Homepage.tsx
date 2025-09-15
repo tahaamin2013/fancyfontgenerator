@@ -164,19 +164,50 @@ const FancyTextGenerator: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid gap-4">
-              {Object.entries(combinedCharMap)
-                .slice(0, visibleFonts)
-                .map(([fontName, fontMap], index) => (
-                  <FancyTextContainer
-                    key={fontName}
-                    charMap={fontMap}
-                    inputText={displayedText}
-                    fontName={fontName}
-                    index={index}
-                  />
-                ))}
-            </div>
+           <div className="grid gap-4">
+      {Object.entries(combinedCharMap)
+        .slice(0, visibleFonts)
+        .map(([fontName, fontMap], index) => (
+          <div key={fontName + index}>
+            <FancyTextContainer
+              charMap={fontMap}
+              inputText={displayedText}
+              fontName={fontName}
+              index={index}
+            />
+
+            {/* 👇 Every 6th item, show an Ad */}
+            {(index + 1) % 6 === 0 && (
+              <div className="my-4 flex justify-center">
+                <div id={`ad-container-${index}`} />
+
+                <Script
+                  id={`adsterra-banner-${index}`}
+                  strategy="afterInteractive"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      var atOptions = {
+                        'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                        'format' : 'iframe',
+                        'height' : 90,
+                        'width' : 728,
+                        'params' : {}
+                      };
+                      var container = document.getElementById("ad-container-${index}");
+                      if (container && !container.hasChildNodes()) {
+                        var script = document.createElement("script");
+                        script.type = "text/javascript";
+                        script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                        container.appendChild(script);
+                      }
+                    `,
+                  }}
+                />
+              </div>
+            )}
+          </div>
+        ))}
+    </div>
 
             {visibleFonts < Object.keys(combinedCharMap).length && (
               <div className="flex justify-center mt-10">

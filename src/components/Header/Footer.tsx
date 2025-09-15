@@ -46,7 +46,6 @@ export default function ModernFooter() {
         }}
       />
     </div>
-
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 border-t">
       <div className="  mx-auto pt-12">
         {/* Main Footer Content */}
