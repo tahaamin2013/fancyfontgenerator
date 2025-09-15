@@ -100,6 +100,7 @@ export default function RootLayout({
           </Providers>
           <Footer />
         </NextThemeProvider>
+        <script type='text/javascript' src='//pl27646974.revenuecpmgate.com/0a/b1/45/0ab14528ff0ac3b971c5801bcbf9c504.js'></script>
       </body>
     </html>
   );
