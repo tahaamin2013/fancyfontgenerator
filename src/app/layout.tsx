@@ -8,7 +8,7 @@ import { Toaster } from "@/src/components/ui/sonner"
 import Script from "next/script";
 import Footer from "../components/Header/Footer";
 const Header = lazy(() => import("@/src/components/Header"));
-// const NextThemeProvider = lazy(() => import("@/src/providers/theme-provider"));
+const NextThemeProvider = lazy(() => import("@/src/providers/theme-provider"));
 
 export default function RootLayout({
   children,
@@ -93,7 +93,7 @@ export default function RootLayout({
                 <script type='text/javascript' src='//pl27647283.revenuecpmgate.com/ac/2b/2d/ac2b2da4217b85c286d81681d2a56188.js'></script>
       </head>
       <body className={cx("font-EuclidCircularB", "font-mr")}>
-        {/* <NextThemeProvider> */}
+        <NextThemeProvider>
           <Header /> 
           <Providers>
                     <Toaster />
@@ -101,7 +101,7 @@ export default function RootLayout({
             <ToastContainer />
           </Providers>
           <Footer />
-        {/* </NextThemeProvider> */}
+        </NextThemeProvider>
         <script type='text/javascript' src='//pl27646974.revenuecpmgate.com/0a/b1/45/0ab14528ff0ac3b971c5801bcbf9c504.js'></script>
       </body>
     </html>
