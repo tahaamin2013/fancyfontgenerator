@@ -167,7 +167,7 @@ const FancyTextGenerator: React.FC = () => {
       {Object.entries(combinedCharMap)
         .slice(0, visibleFonts)
         .map(([fontName, fontMap], index) => (
-          <div key={fontName}>
+          <div key={fontName} >
             {/* Font Container */}
             <FancyTextContainer
               charMap={fontMap}
@@ -179,7 +179,7 @@ const FancyTextGenerator: React.FC = () => {
             {/* Show Ad after every 6 fonts */}
             {(index + 1) % 4 === 0 && (
             <div className=" mt-3 flex  justify-center">
-              <div className="w-screen flex justify-center md:w-full overflow-x-scroll">
+              <div className="w-screen  sm:flex sm:justify-center sm:w-full overflow-x-scroll">
  {/* Desktop Ad */}
   <div id={`ad-desktop-${index}`} />
   <Script
@@ -510,10 +510,10 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
       onClick={handleCopy}
-      className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border border-gray-100 dark:border-gray-700"
+      className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border w-screen  md:w-full border-gray-100 dark:border-gray-700 "
       >
-      <div className="flex items-center justify-between p-4">
-        <div className="flex-1 min-w-0">
+      <div className="flex items-center   justify-between p-4">
+        <div className="flex-1 ">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white truncate">{fancyText}</h2>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{fontName}</p>
         </div>

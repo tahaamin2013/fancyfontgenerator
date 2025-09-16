@@ -288,7 +288,7 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
       onClick={handleCopy}
-      className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border border-gray-100 dark:border-gray-700"
+      className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border border-gray-100 dark:border-gray-700 "
     >
       <div className="flex items-center justify-between p-4">
         <div className="flex-1 min-w-0">
@@ -317,7 +317,9 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
                 />
               </svg>
             ) : (
-              <Copy className="h-5 w-5" />
+              <div>
+                <Copy className="h-5 w-5" />
+              </div>
             )}
           </button>
         </div>
