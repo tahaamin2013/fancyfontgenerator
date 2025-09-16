@@ -180,7 +180,7 @@ Generatore di caratteri per Facebook
             />
 
             {/* Show Ad after every 6 fonts */}
-            {(index + 1) % 6 === 0 && (
+            {(index + 1) % 4 === 0 && (
             <div className=" mt-3 flex  justify-center">
               <div className="w-screen flex justify-center md:w-full overflow-x-scroll">
  {/* Desktop Ad */}
