@@ -4,6 +4,7 @@ import { Copy } from "lucide-react"
 import { Button } from "@/src/components/ui/button"
 import { Input } from "@/src/components/ui/input"
 import { useState } from "react"
+import Script from "next/script"
 
 export default function SpecialCharactersPage() {
   const [searchTerm, setSearchTerm] = useState("")
@@ -15,9 +16,32 @@ export default function SpecialCharactersPage() {
         <h1 className="text-4xl font-bold text-center mb-8 text-gray-800 dark:text-white">
           Tabella dei Caratteri Speciali
         </h1>
+          <div className="flex justify-center my-4">
+      <div id="adsterra-container" className="w-full flex justify-center"></div>
 
-    
-
+      <Script
+        id="adsterra-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var atOptions = {
+              'key' : '01eb145a7a8f8ac565cac8ed8950228e',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+            var container = document.getElementById("adsterra-container");
+            if (container) {
+              var script = document.createElement("script");
+              script.type = "text/javascript";
+              script.src = "//www.highperformanceformat.com/01eb145a7a8f8ac565cac8ed8950228e/invoke.js";
+              container.appendChild(script);
+            }
+          `,
+        }}
+      />
+    </div>
         <div className="mb-8 ">
           <div className="relative">
             <Input

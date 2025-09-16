@@ -94,6 +94,7 @@ export default function RootLayout({
       </head>
       <body className={cx("font-EuclidCircularB", "font-mr")}>
         <NextThemeProvider>
+       
           <Header /> 
           <Providers>
                     <Toaster />

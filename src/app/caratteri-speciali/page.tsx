@@ -1,5 +1,6 @@
 import CharacterGrid from "@/src/components/character-grid"
 import type { Metadata } from "next"
+import Script from "next/script"
 
 export const metadata: Metadata = {
   title: "Caratteri Speciali da Copiare e Incollare - Simboli, Corsivo",
@@ -31,7 +32,32 @@ export default function Home() {
         <div className="container mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Caratteri Speciali</h1>
           <p className="text-lg md:text-xl opacity-90">Benvenuto alla nostra collezione di caratteri speciali!</p>
-        </div>
+    <div className="w-full hidden md:flex my-4">
+      <div id="ad-container-desktop" style={{ width: "100%", maxWidth: "728px" }} />
+
+      <Script
+        id="adsterra-desktop"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var atOptions = {
+              'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+            var container = document.getElementById("ad-container-desktop");
+            if (container) {
+              var script = document.createElement("script");
+              script.type = "text/javascript";
+              script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+              container.appendChild(script);
+            }
+          `,
+        }}
+      />
+    </div>        </div>
         {/* Instructions */}
         <div className="p-4 text-left rounded-lg mb-8">
           <h2 className="font-medium text-white mb-2">Come utilizzare i caratteri speciali</h2>
@@ -48,6 +74,8 @@ export default function Home() {
       <main className="container mx-auto py-8 px-4 md:px-8">
         <CharacterGrid />
       </main>
+               <script async data-cfasync="false" src="//pl27647015.revenuecpmgate.com/561945773a837ed34a8c131b672a147a/invoke.js"></script>
+<div id="container-561945773a837ed34a8c131b672a147a"></div>
     </div>
   )
 }

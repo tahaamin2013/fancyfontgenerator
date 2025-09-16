@@ -181,33 +181,35 @@ const FancyTextGenerator: React.FC = () => {
             {(index + 1) % 7 === 0 && (
               <>
                 {/* Desktop Banner Ad */}
-                <div className="my-4 flex overflow-x-scroll justify-center">
-                  <div id={`ad-container-desktop-${index}`} />
-                  <Script
-                    id={`adsterra-desktop-${index}`}
-                    strategy="afterInteractive"
-                    dangerouslySetInnerHTML={{
-                      __html: `
-                        var atOptions = {
-                          'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-                          'format' : 'iframe',
-                          'height' : 90,
-                          'width' : 728,
-                          'params' : {}
-                        };
-                        var container = document.getElementById("ad-container-desktop-${index}");
-                        if (container) {
-                          var script = document.createElement("script");
-                          script.type = "text/javascript";
-                          script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-                          container.appendChild(script);
-                        }
-                      `,
-                    }}
-                  />
-                </div>
-
-              </>
+              <div className="my-4 flex justify-center w-full">
+  <div
+    id={`ad-container-desktop-${index}`}
+    style={{ width: "100%", maxWidth: "728px" }}
+  />
+  <Script
+    id={`adsterra-desktop-${index}`}
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: `
+        var atOptions = {
+          'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+        var container = document.getElementById("ad-container-desktop-${index}");
+        if (container) {
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+          container.appendChild(script);
+        }
+      `,
+    }}
+  />
+</div>
+</>
             )}
           </div>
         ))}
@@ -267,8 +269,7 @@ const FancyTextGenerator: React.FC = () => {
                     </p>
                   </div>
 
-                  <script async data-cfasync="false" src="//pl27647015.revenuecpmgate.com/561945773a837ed34a8c131b672a147a/invoke.js"></script>
-<div id="container-561945773a837ed34a8c131b672a147a"></div>
+         
 
                   <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
                     <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-4">
@@ -351,12 +352,37 @@ const FancyTextGenerator: React.FC = () => {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            className="mt-20 bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden"
+          <div
+            className="mt-20 bg-white dark:bg-gray-800 block gap-5 md:flex rounded-2xl shadow-lg overflow-hidden"
           >
+            <div className="hidden md:block">
+                 <div
+        id="ad-container-skyscraper"
+        style={{ width: "100%", maxWidth: "160px", minHeight: "600px" }}
+      />
+      <Script
+        id="adsterra-skyscraper"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var atOptions = {
+              'key' : '3b5fa1f4c3f73210970b365785a42e34',
+              'format' : 'iframe',
+              'height' : 600,
+              'width' : 160,
+              'params' : {}
+            };
+            var container = document.getElementById("ad-container-skyscraper");
+            if (container) {
+              var script = document.createElement("script");
+              script.type = "text/javascript";
+              script.src = "//www.highperformanceformat.com/3b5fa1f4c3f73210970b365785a42e34/invoke.js";
+              container.appendChild(script);
+            }
+          `,
+        }}
+      />
+            </div>
             <div className="p-8">
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
                 Crea testi con caratteri speciali unici e belli
@@ -418,7 +444,7 @@ const FancyTextGenerator: React.FC = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
     <div id="ezoic-pub-ad-placeholder-101"></div>
 

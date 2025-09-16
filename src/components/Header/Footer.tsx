@@ -20,9 +20,13 @@ export default function ModernFooter() {
 
   return (
  <>
-  <div className="my-4 md:flex hidden justify-center">
-      <div id="ad-container-728x90"></div>
-
+ <div className="my-4 hidden md:flex justify-center gap-4">
+   <div>
+       {/* 728x90 Banner */}
+      <div
+        id="ad-container-728x90"
+        style={{ width: "100%", maxWidth: "728px", minHeight: "90px" }}
+      />
       <Script
         id="adsterra-banner"
         strategy="afterInteractive"
@@ -45,6 +49,10 @@ export default function ModernFooter() {
           `,
         }}
       />
+      <a href="https://beta.publishers.adsterra.com/referral/SUD9tTDbqX" rel="nofollow"><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/png/728%20x%2090%20px.png" /></a>  
+   </div>
+      {/* 160x600 Skyscraper */}
+   
     </div>
     <footer className="bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 border-t">
       <div className="  mx-auto pt-12">

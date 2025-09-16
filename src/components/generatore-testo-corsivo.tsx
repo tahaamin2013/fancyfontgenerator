@@ -6,6 +6,7 @@ import { Textarea } from "@/src/components/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card"
 import { Badge } from "@/src/components/ui/badge"
 import { Copy, Check } from "lucide-react"
+import Script from "next/script"
 
 export default function GeneratoreTestoCorsivo() {
   const [inputText, setInputText] = useState("")
@@ -683,7 +684,34 @@ const lowercaseAlphabets = [
           </CardContent>
         </Card>
 
-  
+  <div className=" hidden md:flex justify-center w-full ">
+      <div
+            id="ad-container-728x90"
+            style={{ width: "100%", maxWidth: "728px", minHeight: "90px" }}
+          />
+          <Script
+            id="adsterra-banner"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                var atOptions = {
+                  'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                  'format' : 'iframe',
+                  'height' : 90,
+                  'width' : 728,
+                  'params' : {}
+                };
+                var container = document.getElementById("ad-container-728x90");
+                if (container) {
+                  var script = document.createElement("script");
+                  script.type = "text/javascript";
+                  script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                  container.appendChild(script);
+                }
+              `,
+            }}
+          />
+  </div>
         {/* Uppercase Italic Alphabets */}
         <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
           <CardHeader>
@@ -722,7 +750,34 @@ const lowercaseAlphabets = [
             </div>
           </CardContent>
         </Card>
-
+  <div className=" hidden md:flex justify-center w-full ">
+      <div
+            id="ad-container-728x90"
+            style={{ width: "100%", maxWidth: "728px", minHeight: "90px" }}
+          />
+          <Script
+            id="adsterra-banner"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                var atOptions = {
+                  'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                  'format' : 'iframe',
+                  'height' : 90,
+                  'width' : 728,
+                  'params' : {}
+                };
+                var container = document.getElementById("ad-container-728x90");
+                if (container) {
+                  var script = document.createElement("script");
+                  script.type = "text/javascript";
+                  script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                  container.appendChild(script);
+                }
+              `,
+            }}
+          />
+  </div>
         {/* Lowercase Italic Alphabets */}
         <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm">
           <CardHeader>

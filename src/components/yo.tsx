@@ -12,6 +12,7 @@ import {
   fonts,
 } from "@/src/app/font-corsivo/data"
 import EmoticonSelector from "@/src/components/Specialchar"
+import Script from "next/script"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -122,6 +123,34 @@ const FancyTextGenerator: React.FC = () => {
                   />
                 ))}
             </div>
+              <div className=" hidden md:flex my-6 justify-center w-full ">
+                  <div
+                        id="ad-container-728x90"
+                        style={{ width: "100%", maxWidth: "728px", minHeight: "90px" }}
+                      />
+                      <Script
+                        id="adsterra-banner"
+                        strategy="afterInteractive"
+                        dangerouslySetInnerHTML={{
+                          __html: `
+                            var atOptions = {
+                              'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                              'format' : 'iframe',
+                              'height' : 90,
+                              'width' : 728,
+                              'params' : {}
+                            };
+                            var container = document.getElementById("ad-container-728x90");
+                            if (container) {
+                              var script = document.createElement("script");
+                              script.type = "text/javascript";
+                              script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                              container.appendChild(script);
+                            }
+                          `,
+                        }}
+                      />
+              </div>
 
             {visibleFonts < Object.keys(combinedCharMap).length && (
               <div className="flex justify-center mt-10">
@@ -169,6 +198,32 @@ const FancyTextGenerator: React.FC = () => {
                     <li>• Caratteri speciali da tastiera</li>
                   </ul>
                 </div>
+                  <div className="flex justify-center my-4">
+      <div id="ad-container-mobile" className="w-full flex justify-center"></div>
+
+      <Script
+        id="adsterra-mobile"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var atOptions = {
+              'key' : '01eb145a7a8f8ac565cac8ed8950228e',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+            var container = document.getElementById("ad-container-mobile");
+            if (container) {
+              var script = document.createElement("script");
+              script.type = "text/javascript";
+              script.src = "//www.highperformanceformat.com/01eb145a7a8f8ac565cac8ed8950228e/invoke.js";
+              container.appendChild(script);
+            }
+          `,
+        }}
+      />
+    </div>
                 
                 <div>
                   <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
@@ -185,7 +240,8 @@ const FancyTextGenerator: React.FC = () => {
                     <li>• Belle scritture in corsivo</li>
                   </ul>
                 </div>
-              </div>
+              </div>  
+          
 
               <div className="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl">
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
@@ -198,7 +254,6 @@ const FancyTextGenerator: React.FC = () => {
                   <li>4. Incolla dove vuoi: Instagram, WhatsApp, tatuaggi, etc.</li>
                 </ol>
               </div>
-
               <div className="mt-8">
                 <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                   Stili di Calligrafia Corsiva Disponibili
@@ -215,7 +270,34 @@ const FancyTextGenerator: React.FC = () => {
           </motion.div>
 
       <EmoticonSelector />
-
+  <div className=" hidden md:flex justify-center w-full ">
+      <div
+            id="ad-container-728x90"
+            style={{ width: "100%", maxWidth: "728px", minHeight: "90px" }}
+          />
+          <Script
+            id="adsterra-banner"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                var atOptions = {
+                  'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                  'format' : 'iframe',
+                  'height' : 90,
+                  'width' : 728,
+                  'params' : {}
+                };
+                var container = document.getElementById("ad-container-728x90");
+                if (container) {
+                  var script = document.createElement("script");
+                  script.type = "text/javascript";
+                  script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                  container.appendChild(script);
+                }
+              `,
+            }}
+          />
+  </div>
         </div>
     
       <ToastContainer position="top-right" autoClose={1000} hideProgressBar theme="colored" />

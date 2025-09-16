@@ -4,6 +4,7 @@ import { Badge } from "@/src/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/src/components/ui/tabs"
 import { Alert, AlertDescription, AlertTitle } from "@/src/components/ui/alert"
 import { Metadata } from "next"
+import Script from "next/script"
 export const metadata: Metadata = {
   title: "Scorciatoie Alt Code - Caratteri Speciali a Portata di Mano",
   description:
@@ -17,10 +18,38 @@ export default function KeyboardShortcutsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
  
-      <header className="bg-purple-800 text-white py-8 px-4 md:px-6">
+      <header className="bg-purple-800 text-white flex flex-row gap-4 py-8 px-4 md:px-6">
         <div className="container mx-auto max-w-6xl">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Scorciatoie Alt Code</h1>
           <p className="text-purple-200 text-lg">Caratteri speciali a portata di mano</p>
+   <div className="hidden md:flex">
+             <div
+        id="ad-container-728x90"
+        style={{ width: "100%", maxWidth: "728px", minHeight: "90px" }}
+      />
+      <Script
+        id="adsterra-banner"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            var atOptions = {
+              'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 728,
+              'params' : {}
+            };
+            var container = document.getElementById("ad-container-728x90");
+            if (container) {
+              var script = document.createElement("script");
+              script.type = "text/javascript";
+              script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+              container.appendChild(script);
+            }
+          `,
+        }}
+      />
+   </div>
         </div>
       </header>
 

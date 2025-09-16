@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils"
 
 // Import the embellishment patterns
 import { embellishmentPatterns } from "@/embellishment-patterns"
+import Script from "next/script"
 
 export default function FancyTextGenerator() {
   const [inputText, setInputText] = useState<string>("")
@@ -128,75 +129,109 @@ export default function FancyTextGenerator() {
               </p>
             </div>
 
-            <div className="grid gap-4">
-              {embellishmentPatterns.slice(0, visiblePatterns).map((pattern, index) => {
-                const decoratedName = pattern.replace(/your name/gi, displayedText)
-                const isCopied = copiedIndex === index
+         <div className="grid gap-4">
+  {embellishmentPatterns.slice(0, visiblePatterns).map((pattern, index) => {
+    const decoratedName = pattern.replace(/your name/gi, displayedText)
+    const isCopied = copiedIndex === index
 
-                return (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.05 }}
-                    onClick={() => handleCopy(decoratedName, index)}
-                    className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border border-gray-100 dark:border-gray-700"
-                  >
-                    <div className="flex items-center justify-between p-4">
-                      <div className="flex-1 min-w-0">
-                        <h2 className="text-2xl font-bold text-gray-800 dark:text-white truncate">{decoratedName}</h2>
-                        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Stile #{index + 1}</p>
-                      </div>
-                      <div className="ml-4">
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation()
-                            handleCopy(decoratedName, index)
-                          }}
-                          className={cn(
-                            "flex items-center justify-center rounded-full w-10 h-10 transition-colors duration-200",
-                            isCopied
-                              ? "bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-300"
-                              : "bg-purple-100 text-purple-600 hover:bg-purple-200 dark:bg-purple-900 dark:text-purple-300 dark:hover:bg-purple-800",
-                          )}
-                          aria-label="Copia negli appunti"
-                        >
-                          {isCopied ? (
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className="h-5 w-5"
-                              viewBox="0 0 20 20"
-                              fill="currentColor"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          ) : (
-                            <Copy className="h-5 w-5" />
-                          )}
-                        </button>
-                      </div>
-                    </div>
-                    <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-purple-500 to-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                  </motion.div>
-                )
-              })}
+    return (
+      <div key={index}>
+        {/* Pattern card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: index * 0.05 }}
+          onClick={() => handleCopy(decoratedName, index)}
+          className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border border-gray-100 dark:border-gray-700"
+        >
+          <div className="flex items-center justify-between p-4">
+            <div className="flex-1 min-w-0">
+              <h2 className="text-2xl font-bold text-gray-800 dark:text-white truncate">
+                {decoratedName}
+              </h2>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Stile #{index + 1}</p>
             </div>
+            <div className="ml-4">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation()
+                  handleCopy(decoratedName, index)
+                }}
+                className={cn(
+                  "flex items-center justify-center rounded-full w-10 h-10 transition-colors duration-200",
+                  isCopied
+                    ? "bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-300"
+                    : "bg-purple-100 text-purple-600 hover:bg-purple-200 dark:bg-purple-900 dark:text-purple-300 dark:hover:bg-purple-800",
+                )}
+                aria-label="Copia negli appunti"
+              >
+                {isCopied ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ) : (
+                  <Copy className="h-5 w-5" />
+                )}
+              </button>
+            </div>
+          </div>
+          <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-purple-500 to-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+        </motion.div>
+
+        {/* Show ad after every 6 items */}
+        {(index + 1) % 4 === 0 && (
+          <div className="my-4 flex justify-center">
+            <div id={`ad-container-${index}`} />
+            <Script
+              id={`adsterra-${index}`}
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  var atOptions = {
+                    'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                  };
+                  var container = document.getElementById("ad-container-${index}");
+                  if (container) {
+                    var script = document.createElement("script");
+                    script.type = "text/javascript";
+                    script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                    container.appendChild(script);
+                  }
+                `,
+              }}
+            />
+          </div>
+        )}
+      </div>
+    )
+  })}
+</div>
+
 
             {visiblePatterns < embellishmentPatterns.length && (
               <div className="flex justify-center mt-10">
-                <Button
+                <button
                   onClick={handleShowMorePatterns}
-                  className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-purple-600 to-pink-600 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-800"
+                  className="group relative inline-flex text-white px-3 py-2 items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-purple-600 to-pink-600 p-0.5 text-sm font-medium text-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-purple-200 dark:focus:ring-purple-800"
                 >
                   <span className="flex items-center gap-2">
                     <span>Carica Altri Stili</span>
                     <ChevronDown className="w-4 h-4" />
                   </span>
-                </Button>
+                </button>
               </div>
             )}
           </motion.div>
