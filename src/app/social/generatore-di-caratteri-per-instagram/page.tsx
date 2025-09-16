@@ -178,7 +178,7 @@ Generatore di caratteri per Instagram
             {/* Show Ad after every 6 fonts */}
             {(index + 1) % 6 === 0 && (
             <div className=" mt-3 flex  justify-center">
-              <div className="w-screen md:w-full overflow-x-scroll">
+              <div className="w-screen flex justify-center md:w-full overflow-x-scroll">
  {/* Desktop Ad */}
   <div id={`ad-desktop-${index}`} />
   <Script
