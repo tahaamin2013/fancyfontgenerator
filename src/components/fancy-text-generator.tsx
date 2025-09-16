@@ -189,32 +189,38 @@ export default function FancyTextGenerator() {
 
         {/* Show ad after every 6 items */}
         {(index + 1) % 4 === 0 && (
-          <div className="my-4 flex justify-center">
-            <div id={`ad-container-${index}`} />
-            <Script
-              id={`adsterra-${index}`}
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  var atOptions = {
-                    'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-                    'format' : 'iframe',
-                    'height' : 90,
-                    'width' : 728,
-                    'params' : {}
-                  };
-                  var container = document.getElementById("ad-container-${index}");
-                  if (container) {
-                    var script = document.createElement("script");
-                    script.type = "text/javascript";
-                    script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-                    container.appendChild(script);
-                  }
-                `,
-              }}
-            />
-          </div>
-        )}
+              <>
+                {/* Desktop Banner Ad */}
+              <div className="my-4 flex justify-center w-full">
+  <div
+    id={`ad-container-desktop-${index}`}
+    style={{ width: "100%", maxWidth: "728px" }}
+  />
+  <Script
+    id={`adsterra-desktop-${index}`}
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: `
+        var atOptions = {
+          'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+        };
+        var container = document.getElementById("ad-container-desktop-${index}");
+        if (container) {
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+          container.appendChild(script);
+        }
+      `,
+    }}
+  />
+</div>
+</>
+            )}
       </div>
     )
   })}

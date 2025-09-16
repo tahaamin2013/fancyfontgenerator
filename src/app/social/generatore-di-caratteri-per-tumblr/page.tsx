@@ -164,7 +164,7 @@ Generatore di caratteri per Tumblr
               </p>
             </div>
 
-                 <div className="grid gap-4">
+        <div className="grid gap-4">
       {Object.entries(combinedCharMap)
         .slice(0, visibleFonts)
         .map(([fontName, fontMap], index) => (
@@ -177,43 +177,45 @@ Generatore di caratteri per Tumblr
               index={index}
             />
 
-            {/* Har 7 font ke baad ad show karo */}
-            {(index + 1) % 7 === 0 && (
-              <>
-                {/* Desktop Banner Ad */}
-              <div className="my-4 flex justify-center w-full">
-  <div
-    id={`ad-container-desktop-${index}`}
-    style={{ width: "100%", maxWidth: "728px" }}
-  />
+            {/* Show Ad after every 6 fonts */}
+            {(index + 1) % 6 === 0 && (
+            <div className=" mt-3 flex  justify-center">
+              <div className="w-screen md:w-full overflow-x-scroll">
+ {/* Desktop Ad */}
+  <div id={`ad-desktop-${index}`} />
   <Script
     id={`adsterra-desktop-${index}`}
     strategy="afterInteractive"
     dangerouslySetInnerHTML={{
       __html: `
-        var atOptions = {
-          'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-          'format' : 'iframe',
-          'height' : 90,
-          'width' : 728,
-          'params' : {}
-        };
-        var container = document.getElementById("ad-container-desktop-${index}");
-        if (container) {
-          var script = document.createElement("script");
-          script.type = "text/javascript";
-          script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-          container.appendChild(script);
-        }
+        (function() {
+          var atOptions = {
+            'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+          var container = document.getElementById("ad-desktop-${index}");
+          if (container) {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+            container.appendChild(script);
+          }
+        })();
       `,
     }}
   />
-</div>
-</>
+
+              </div>
+
+              </div>
             )}
           </div>
         ))}
     </div>
+
 
             {visibleFonts < Object.keys(combinedCharMap).length && (
               <div className="flex justify-center mt-10">

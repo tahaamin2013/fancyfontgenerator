@@ -177,7 +177,7 @@ Generatore di caratteri per Whatsapp
             />
 
             {/* Har 7 font ke baad ad show karo */}
-            {(index + 1) % 7 === 0 && (
+            {(index + 1) % 4 === 0 && (
               <>
                 {/* Desktop Banner Ad */}
               <div className="my-4 flex justify-center w-full">
