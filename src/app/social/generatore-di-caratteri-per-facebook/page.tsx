@@ -34,6 +34,7 @@ import {
 } from "@/src/app/data"
 import EmoticonSelector from "@/src/components/Specialchar"
 import Script from "next/script"
+import Ad from "@/src/components/ad"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -165,59 +166,45 @@ Generatore di caratteri per Facebook
                 per Facebook!
               </p>
             </div>
-
-     <div className="grid gap-4">
-      {Object.entries(combinedCharMap)
-        .slice(0, visibleFonts)
-        .map(([fontName, fontMap], index) => (
-          <div key={fontName}>
-            {/* Font Container */}
-            <FancyTextContainer
-              charMap={fontMap}
-              inputText={displayedText}
-              fontName={fontName}
-              index={index}
-            />
-
-            {/* Show Ad after every 6 fonts */}
-            {(index + 1) % 4 === 0 && (
-            <div className=" mt-3 flex  justify-center">
-              <div className="w-screen flex justify-center md:w-full overflow-x-scroll">
- {/* Desktop Ad */}
-  <div id={`ad-desktop-${index}`} />
-  <Script
-    id={`adsterra-desktop-${index}`}
-    strategy="afterInteractive"
-    dangerouslySetInnerHTML={{
-      __html: `
-        (function() {
-          var atOptions = {
-            'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-          var container = document.getElementById("ad-desktop-${index}");
-          if (container) {
-            var script = document.createElement("script");
-            script.type = "text/javascript";
-            script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-            container.appendChild(script);
-          }
-        })();
-      `,
-    }}
-  />
-
-              </div>
-
-              </div>
-            )}
-          </div>
-        ))}
+  <div className="grid gap-4">
+                <div id="ad-desktop" className="flex overflow-x-hidden justify-center ">
+      <Script
+        id="adsterra-desktop"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              var atOptions = {
+                'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+              var container = document.getElementById("ad-desktop");
+              if (container) {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                container.appendChild(script);
+              }
+            })();
+          `,
+        }}
+      />
     </div>
-
+              {Object.entries(combinedCharMap)
+                .slice(0, visibleFonts)
+                .map(([fontName, fontMap], index) => (
+                  <FancyTextContainer
+                    key={fontName}
+                    charMap={fontMap}
+                    inputText={displayedText}
+                    fontName={fontName}
+                    index={index}
+                  />
+                ))}
+            </div>
 
             {visibleFonts < Object.keys(combinedCharMap).length && (
               <div className="flex justify-center mt-10">

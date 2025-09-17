@@ -34,6 +34,7 @@ import {
 } from "../app/data"
 import EmoticonSelector from "../components/Specialchar"
 import Script from "next/script"
+import Ad from "./ad"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -163,57 +164,21 @@ const FancyTextGenerator: React.FC = () => {
                 per Instagram, Facebook, WhatsApp, Fortnite, Brawl Stars e molto altro!
               </p>
             </div>
-  <div className="grid gap-4">
-      {Object.entries(combinedCharMap)
-        .slice(0, visibleFonts)
-        .map(([fontName, fontMap], index) => (
-          <div key={fontName} >
-            {/* Font Container */}
-            <FancyTextContainer
-              charMap={fontMap}
-              inputText={displayedText}
-              fontName={fontName}
-              index={index}
-            />
 
-            {/* Show Ad after every 6 fonts */}
-            {(index + 1) % 4 === 0 && (
-            <div className=" mt-3 flex  justify-center">
-              <div className="w-screen  sm:flex sm:justify-center sm:w-full overflow-x-scroll">
- {/* Desktop Ad */}
-  <div id={`ad-desktop-${index}`} />
-  <Script
-    id={`adsterra-desktop-${index}`}
-    strategy="afterInteractive"
-    dangerouslySetInnerHTML={{
-      __html: `
-        (function() {
-          var atOptions = {
-            'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-          var container = document.getElementById("ad-desktop-${index}");
-          if (container) {
-            var script = document.createElement("script");
-            script.type = "text/javascript";
-            script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-            container.appendChild(script);
-          }
-        })();
-      `,
-    }}
-  />
-
-              </div>
-
-              </div>
-            )}
-          </div>
-        ))}
-    </div>
+           <div className="grid gap-4">
+               <Ad />
+              {Object.entries(combinedCharMap)
+                .slice(0, visibleFonts)
+                .map(([fontName, fontMap], index) => (
+                  <FancyTextContainer
+                    key={fontName}
+                    charMap={fontMap}
+                    inputText={displayedText}
+                    fontName={fontName}
+                    index={index}
+                  />
+                ))}
+            </div>
 
             {visibleFonts < Object.keys(combinedCharMap).length && (
               <div className="flex justify-center mt-10">
@@ -231,7 +196,59 @@ const FancyTextGenerator: React.FC = () => {
               </div>
             )}
           </motion.div>
+                       <div id="ad-desktop" className="flex overflow-x-hidden justify-center ">
+                <Script
+                  id="adsterra-desktop"
+                  strategy="afterInteractive"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      (function() {
+                        var atOptions = {
+                          'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                          'format' : 'iframe',
+                          'height' : 90,
+                          'width' : 728,
+                          'params' : {}
+                        };
+                        var container = document.getElementById("ad-desktop");
+                        if (container) {
+                          var script = document.createElement("script");
+                          script.type = "text/javascript";
+                          script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                          container.appendChild(script);
+                        }
+                      })();
+                    `,
+                  }}
+                />
+              </div>
       <EmoticonSelector />
+                   <div id="ad-desktop" className="flex overflow-x-hidden justify-center ">
+            <Script
+              id="adsterra-desktop"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  (function() {
+                    var atOptions = {
+                      'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                      'format' : 'iframe',
+                      'height' : 90,
+                      'width' : 728,
+                      'params' : {}
+                    };
+                    var container = document.getElementById("ad-desktop");
+                    if (container) {
+                      var script = document.createElement("script");
+                      script.type = "text/javascript";
+                      script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                      container.appendChild(script);
+                    }
+                  })();
+                `,
+              }}
+            />
+          </div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -268,8 +285,6 @@ const FancyTextGenerator: React.FC = () => {
                       attirare più follower.
                     </p>
                   </div>
-
-         
 
                   <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-xl">
                     <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mb-4">
@@ -351,38 +366,40 @@ const FancyTextGenerator: React.FC = () => {
               </div>
             </div>
           </motion.div>
+                      <div id="ad-desktop" className="flex overflow-x-hidden mt-5 justify-center ">
+                <Script
+                  id="adsterra-desktop"
+                  strategy="afterInteractive"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                      (function() {
+                        var atOptions = {
+                          'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                          'format' : 'iframe',
+                          'height' : 90,
+                          'width' : 728,
+                          'params' : {}
+                        };
+                        var container = document.getElementById("ad-desktop");
+                        if (container) {
+                          var script = document.createElement("script");
+                          script.type = "text/javascript";
+                          script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                          container.appendChild(script);
+                        }
+                      })();
+                    `,
+                  }}
+                />
+              </div>
 
-          <div
-            className="mt-20 bg-white dark:bg-gray-800 block gap-5 md:flex rounded-2xl shadow-lg overflow-hidden"
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="mt-20 bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden"
           >
-            <div className="hidden md:block">
-                 <div
-        id="ad-container-skyscraper"
-        style={{ width: "100%", maxWidth: "160px", minHeight: "600px" }}
-      />
-      <Script
-        id="adsterra-skyscraper"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            var atOptions = {
-              'key' : '3b5fa1f4c3f73210970b365785a42e34',
-              'format' : 'iframe',
-              'height' : 600,
-              'width' : 160,
-              'params' : {}
-            };
-            var container = document.getElementById("ad-container-skyscraper");
-            if (container) {
-              var script = document.createElement("script");
-              script.type = "text/javascript";
-              script.src = "//www.highperformanceformat.com/3b5fa1f4c3f73210970b365785a42e34/invoke.js";
-              container.appendChild(script);
-            }
-          `,
-        }}
-      />
-            </div>
             <div className="p-8">
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-6">
                 Crea testi con caratteri speciali unici e belli
@@ -444,7 +461,7 @@ const FancyTextGenerator: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
     <div id="ezoic-pub-ad-placeholder-101"></div>
 
@@ -510,10 +527,10 @@ const FancyTextContainer: React.FC<FancyTextContainerProps> = ({ charMap, inputT
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
       onClick={handleCopy}
-      className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border w-screen  md:w-full border-gray-100 dark:border-gray-700 "
+      className="relative group bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden cursor-pointer border border-gray-100 dark:border-gray-700"
       >
-      <div className="flex items-center   justify-between p-4">
-        <div className="flex-1 ">
+      <div className="flex items-center justify-between p-4">
+        <div className="flex-1 min-w-0">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white truncate">{fancyText}</h2>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{fontName}</p>
         </div>

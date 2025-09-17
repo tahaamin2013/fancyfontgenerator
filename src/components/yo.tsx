@@ -110,7 +110,33 @@ const FancyTextGenerator: React.FC = () => {
               </p>
             </div>
 
-            <div className="grid gap-4">
+         <div className="grid gap-4">
+                <div id="ad-desktop" className="flex overflow-x-hidden justify-center ">
+      <Script
+        id="adsterra-desktop"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              var atOptions = {
+                'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
+                'format' : 'iframe',
+                'height' : 90,
+                'width' : 728,
+                'params' : {}
+              };
+              var container = document.getElementById("ad-desktop");
+              if (container) {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
+                container.appendChild(script);
+              }
+            })();
+          `,
+        }}
+      />
+    </div>
               {Object.entries(combinedCharMap)
                 .slice(0, visibleFonts)
                 .map(([fontName, fontMap], index) => (
