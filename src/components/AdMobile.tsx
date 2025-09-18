@@ -8,7 +8,8 @@ const AdMobile = ({ index }: { index: number }) => {
       if (container) {
         container.innerHTML = ""; // purana ad hatao
 
-        const atOptions = {
+        // Set atOptions on the window object for the ad script to access
+        (window as any).atOptions = {
           key: "108c6f2b2c994ee2bdf6646aa3216989",
           format: "iframe",
           height: 300,
@@ -27,7 +28,6 @@ const AdMobile = ({ index }: { index: number }) => {
 
     // pehli dafa ad load karo
     loadAd();
-
     // har 5 second baad refresh karo
     const interval = setInterval(loadAd, 1000);
 
