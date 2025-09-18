@@ -35,6 +35,7 @@ import {
 import EmoticonSelector from "../components/Specialchar"
 import Script from "next/script"
 import Ad from "./ad"
+import AdMobile from "./AdMobile"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -166,7 +167,8 @@ const FancyTextGenerator: React.FC = () => {
             </div>
 
            <div className="grid gap-4">
-               <Ad />
+               <Ad index={1} />
+  <AdMobile index={1} />
               {Object.entries(combinedCharMap)
                 .slice(0, visibleFonts)
                 .map(([fontName, fontMap], index) => (
@@ -196,59 +198,10 @@ const FancyTextGenerator: React.FC = () => {
               </div>
             )}
           </motion.div>
-                       <div id="ad-desktop" className="flex overflow-x-hidden justify-center ">
-                <Script
-                  id="adsterra-desktop"
-                  strategy="afterInteractive"
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                      (function() {
-                        var atOptions = {
-                          'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-                          'format' : 'iframe',
-                          'height' : 90,
-                          'width' : 728,
-                          'params' : {}
-                        };
-                        var container = document.getElementById("ad-desktop");
-                        if (container) {
-                          var script = document.createElement("script");
-                          script.type = "text/javascript";
-                          script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-                          container.appendChild(script);
-                        }
-                      })();
-                    `,
-                  }}
-                />
-              </div>
+         
       <EmoticonSelector />
-                   <div id="ad-desktop" className="flex overflow-x-hidden justify-center ">
-            <Script
-              id="adsterra-desktop"
-              strategy="afterInteractive"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  (function() {
-                    var atOptions = {
-                      'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-                      'format' : 'iframe',
-                      'height' : 90,
-                      'width' : 728,
-                      'params' : {}
-                    };
-                    var container = document.getElementById("ad-desktop");
-                    if (container) {
-                      var script = document.createElement("script");
-                      script.type = "text/javascript";
-                      script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-                      container.appendChild(script);
-                    }
-                  })();
-                `,
-              }}
-            />
-          </div>
+                 <Ad index={3} />
+  <AdMobile index={3} />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -366,33 +319,8 @@ const FancyTextGenerator: React.FC = () => {
               </div>
             </div>
           </motion.div>
-                      <div id="ad-desktop" className="flex overflow-x-hidden mt-5 justify-center ">
-                <Script
-                  id="adsterra-desktop"
-                  strategy="afterInteractive"
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                      (function() {
-                        var atOptions = {
-                          'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-                          'format' : 'iframe',
-                          'height' : 90,
-                          'width' : 728,
-                          'params' : {}
-                        };
-                        var container = document.getElementById("ad-desktop");
-                        if (container) {
-                          var script = document.createElement("script");
-                          script.type = "text/javascript";
-                          script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-                          container.appendChild(script);
-                        }
-                      })();
-                    `,
-                  }}
-                />
-              </div>
-
+       <Ad index={2} />
+  <AdMobile index={2} />
 
           <motion.div
             initial={{ opacity: 0 }}
@@ -423,7 +351,8 @@ const FancyTextGenerator: React.FC = () => {
                     YouTube o Discord.
                   </p>
                 </div>
-
+       <Ad index={5} />
+  <AdMobile index={5} />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
                     Come si usano i caratteri speciali?
@@ -462,6 +391,7 @@ const FancyTextGenerator: React.FC = () => {
               </div>
             </div>
           </motion.div>
+
         </div>
     <div id="ezoic-pub-ad-placeholder-101"></div>
 
