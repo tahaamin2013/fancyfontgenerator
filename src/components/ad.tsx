@@ -1,10 +1,10 @@
 import Script from "next/script";
 
-const Ad = ({ index }: { index: number }) => {
+const AdResponsive = ({ index }: { index: number }) => {
   return (
-    
-    <div className="Ad hidden md:flex overflow-x-hidden  justify-center my-1">
-      <div id={`ad-desktop-${index}`} />
+    <div className="flex justify-center my-1">
+      {/* Desktop */}
+      <div className="hidden md:block" id={`ad-desktop-${index}`} />
       <Script
         id={`adsterra-desktop-${index}`}
         strategy="afterInteractive"
@@ -23,7 +23,35 @@ const Ad = ({ index }: { index: number }) => {
                 var script = document.createElement("script");
                 script.type = "text/javascript";
                 script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-                container.innerHTML = ""; // clear old ad
+                container.innerHTML = "";
+                container.appendChild(script);
+              }
+            })();
+          `,
+        }}
+      />
+
+      {/* Mobile */}
+      <div className="block md:hidden" id={`ad-mobile-${index}`} />
+      <Script
+        id={`adsterra-mobile-${index}`}
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              var atOptions = {
+                'key' : '108c6f2b2c994ee2bdf6646aa3216989',
+                'format' : 'iframe',
+                'height' : 300,
+                'width' : 160,
+                'params' : {}
+              };
+              var container = document.getElementById("ad-mobile-${index}");
+              if (container) {
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "//www.highperformanceformat.com/108c6f2b2c994ee2bdf6646aa3216989/invoke.js";
+                container.innerHTML = "";
                 container.appendChild(script);
               }
             })();
@@ -34,4 +62,4 @@ const Ad = ({ index }: { index: number }) => {
   );
 };
 
-export default Ad;
+export default AdResponsive;

@@ -167,7 +167,7 @@ const FancyTextGenerator: React.FC = () => {
             </div>
 
            <div className="grid gap-4">
-               <Ad index={1} />
+             <Ad index={1} />
   <AdMobile index={1} />
               {Object.entries(combinedCharMap)
                 .slice(0, visibleFonts)
@@ -200,7 +200,7 @@ const FancyTextGenerator: React.FC = () => {
           </motion.div>
          
       <EmoticonSelector />
-                 <Ad index={3} />
+               <Ad index={3} />
   <AdMobile index={3} />
           <motion.div
             initial={{ opacity: 0 }}
@@ -319,7 +319,7 @@ const FancyTextGenerator: React.FC = () => {
               </div>
             </div>
           </motion.div>
-       <Ad index={2} />
+     <Ad index={2} />
   <AdMobile index={2} />
 
           <motion.div
@@ -351,7 +351,7 @@ const FancyTextGenerator: React.FC = () => {
                     YouTube o Discord.
                   </p>
                 </div>
-       <Ad index={5} />
+     <Ad index={5} />
   <AdMobile index={5} />
                 <div>
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
