@@ -43,7 +43,7 @@ const AdWrapper = ({ index }: AdWrapperProps) => {
       <div
         id={`ad-mobile-${index}`}
         className="flex md:hidden justify-center"
-      /> 
+      />
     </div>
   );
 };
