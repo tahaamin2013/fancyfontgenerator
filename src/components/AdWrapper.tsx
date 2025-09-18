@@ -12,7 +12,7 @@ const AdWrapper = ({ index }: AdWrapperProps) => {
       if (!container) return;
 
       container.innerHTML = ""; // clear previous
-
+ 
       // Create script tag
       const script = document.createElement("script");
       script.type = "text/javascript";
@@ -43,7 +43,7 @@ const AdWrapper = ({ index }: AdWrapperProps) => {
       <div
         id={`ad-mobile-${index}`}
         className="flex md:hidden justify-center"
-      />
+      /> 
     </div>
   );
 };
