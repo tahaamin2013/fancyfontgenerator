@@ -167,7 +167,7 @@ const FancyTextGenerator: React.FC = () => {
             </div>
 
            <div className="grid gap-4">
-             <Ad index={1} />
+            <Ad index={1} />
   <AdMobile index={1} />
               {Object.entries(combinedCharMap)
                 .slice(0, visibleFonts)

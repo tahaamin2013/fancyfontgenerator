@@ -1,59 +1,33 @@
 import Script from "next/script";
 
-const AdResponsive = ({ index }: { index: number }) => {
+const Ad = ({ index }: { index: number }) => {
+  const containerId = `atContainer-8fcc3f83c250f7ce7879dbd892cfc63b-${index}`;
+
   return (
-    <div className="flex justify-center my-1">
-      {/* Desktop */}
-      <div className="hidden md:block" id={`ad-desktop-${index}`} />
+    <div className="Ad hidden md:flex overflow-x-hidden justify-center my-1">
+      {/* Container for Ad */}
+      <div id={containerId}></div>
+
+      {/* Script Loader */}
       <Script
         id={`adsterra-desktop-${index}`}
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
+            if (typeof atAsyncOptions !== 'object') var atAsyncOptions = [];
+            atAsyncOptions.push({
+              'key': '8fcc3f83c250f7ce7879dbd892cfc63b',
+              'format': 'js',
+              'async': true,
+              'container': '${containerId}',
+              'params': {}
+            });
             (function() {
-              var atOptions = {
-                'key' : '8fcc3f83c250f7ce7879dbd892cfc63b',
-                'format' : 'iframe',
-                'height' : 90,
-                'width' : 728,
-                'params' : {}
-              };
-              var container = document.getElementById("ad-desktop-${index}");
-              if (container) {
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.src = "//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js";
-                container.innerHTML = "";
-                container.appendChild(script);
-              }
-            })();
-          `,
-        }}
-      />
-
-      {/* Mobile */}
-      <div className="block md:hidden" id={`ad-mobile-${index}`} />
-      <Script
-        id={`adsterra-mobile-${index}`}
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              var atOptions = {
-                'key' : '108c6f2b2c994ee2bdf6646aa3216989',
-                'format' : 'iframe',
-                'height' : 300,
-                'width' : 160,
-                'params' : {}
-              };
-              var container = document.getElementById("ad-mobile-${index}");
-              if (container) {
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.src = "//www.highperformanceformat.com/108c6f2b2c994ee2bdf6646aa3216989/invoke.js";
-                container.innerHTML = "";
-                container.appendChild(script);
-              }
+              var script = document.createElement('script');
+              script.type = "text/javascript";
+              script.async = true;
+              script.src = 'http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js';
+              document.getElementsByTagName('head')[0].appendChild(script);
             })();
           `,
         }}
@@ -62,4 +36,4 @@ const AdResponsive = ({ index }: { index: number }) => {
   );
 };
 
-export default AdResponsive;
+export default Ad;
