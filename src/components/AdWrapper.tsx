@@ -7,64 +7,43 @@ type AdWrapperProps = {
 
 const AdWrapper = ({ index }: AdWrapperProps) => {
   useEffect(() => {
-    const loadAd = (key: string, containerId: string) => {
+    const injectAd = (key: string, containerId: string) => {
       const container = document.getElementById(containerId);
-      if (container) {
-        container.innerHTML = ""; // clear old ad
+      if (!container) return;
 
-        if (typeof window !== "undefined") {
-          // @ts-ignore
-          if (typeof window.atAsyncOptions !== "object") {
-            // @ts-ignore
-            window.atAsyncOptions = [];
-          }
+      container.innerHTML = ""; // clear previous
 
-          // @ts-ignore
-          window.atAsyncOptions.push({
-            key,
-            format: "js",
-            async: true,
-            container: containerId,
-            params: {},
-          });
+      // Create script tag
+      const script = document.createElement("script");
+      script.type = "text/javascript";
+      script.async = true;
+      script.src =
+        (location.protocol === "https:" ? "https:" : "http:") +
+        `//www.highperformanceformat.com/${key}/invoke.js`;
 
-          const script = document.createElement("script");
-          script.type = "text/javascript";
-          script.async = true;
-          script.src =
-            (location.protocol === "https:" ? "https:" : "http:") +
-            `//www.highperformanceformat.com/${key}/invoke.js`;
-          document.head.appendChild(script);
-        }
-      }
+      container.appendChild(script);
     };
 
     // Desktop ad
-    loadAd(
-      "8fcc3f83c250f7ce7879dbd892cfc63b",
-      `ad-desktop-container-${index}`
-    );
+    injectAd("8fcc3f83c250f7ce7879dbd892cfc63b", `ad-desktop-${index}`);
 
     // Mobile ad
-    loadAd(
-      "3b5fa1f4c3f73210970b365785a42e34",
-      `ad-mobile-container-${index}`
-    );
+    injectAd("108c6f2b2c994ee2bdf6646aa3216989", `ad-mobile-${index}`);
   }, [index]);
 
   return (
     <div className="my-4">
-      {/* Desktop */}
+      {/* Desktop Only */}
       <div
-        id={`ad-desktop-container-${index}`}
+        id={`ad-desktop-${index}`}
         className="hidden md:flex justify-center"
-      ></div>
+      />
 
-      {/* Mobile */}
+      {/* Mobile Only */}
       <div
-        id={`ad-mobile-container-${index}`}
+        id={`ad-mobile-${index}`}
         className="flex md:hidden justify-center"
-      ></div>
+      />
     </div>
   );
 };

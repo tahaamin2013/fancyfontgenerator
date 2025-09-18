@@ -36,6 +36,7 @@ import EmoticonSelector from "../components/Specialchar"
 import Script from "next/script"
 import Ad from "./ad"
 import AdMobile from "./AdMobile"
+import AdWrapper from "./AdWrapper"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -167,8 +168,7 @@ const FancyTextGenerator: React.FC = () => {
             </div>
 
            <div className="grid gap-4">
-            <Ad index={1} />
-  <AdMobile index={1} />
+            <AdWrapper index={1} />
               {Object.entries(combinedCharMap)
                 .slice(0, visibleFonts)
                 .map(([fontName, fontMap], index) => (
