@@ -1,29 +1,18 @@
 "use client";
-import { useEffect } from "react";
+import Script from "next/script";
+
 const AdMobile = ({ index }: { index: number }) => {
-const adKey = "108c6f2b2c994ee2bdf6646aa3216989";
-useEffect(() => {
-const container = document.getElementById(`container-${adKey}`);
-if (container) {
-container.innerHTML = "";
-(window as any).atOptions = {
-key: adKey,
-format: "iframe",
-height: 300,
-width: 160,
-params: {},
+  return (
+    <div className="AdMobile flex overflow-x-hidden justify-center my-4">
+      <Script
+        id={`adsterra-mobile-${index}`}
+        async
+        data-cfasync="false"
+        src="//pl27647015.revenuecpmgate.com/561945773a837ed34a8c131b672a147a/invoke.js"
+      />
+      <div id={`ad-mobile-${index}-container`} />
+    </div>
+  );
 };
-const script = document.createElement("script");
-script.type = "text/javascript";
-script.src = `//www.highperformanceformat.com/${adKey}/invoke.js`;
-script.async = true;
-container.appendChild(script);
-}
-}, [index]);
-return (
-<div className="AdMobile flex md:hidden justify-center my-1">
-<div id={`container-${adKey}`} />
-</div>
-);
-};
+
 export default AdMobile;
