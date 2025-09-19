@@ -139,12 +139,12 @@ export default function RootLayout({
               }
             `}</style>
 
-            <div className="mobileHide">
+            <div className="mobileHide mt-[100px]">
               <Script id="desktop-atoptions">{desktopAtOptions}</Script>
               <Script src="//www.highperformanceformat.com/8fcc3f83c250f7ce7879dbd892cfc63b/invoke.js" />
             </div>
 
-            <div className="mobileShow">
+            <div className="mobileShow mt-[100px]">
               <Script id="mobile-atoptions">{mobileAtOptions}</Script>
               <Script src="//www.highperformanceformat.com/108c6f2b2c994ee2bdf6646aa3216989/invoke.js" />
             </div>
