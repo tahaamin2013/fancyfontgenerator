@@ -36,6 +36,7 @@ import EmoticonSelector from "../components/Specialchar"
 import Script from "next/script"
 import Ad from "./ad"
 import AdMobile from "./AdMobile"
+import AdBanner from "./adbanner"
 
 const combinedCharMap: any = {
   ...fonts,
@@ -164,11 +165,11 @@ const FancyTextGenerator: React.FC = () => {
                 Usa la nostra collezione di caratteri speciali sulla tastiera per rendere unici i tuoi testi. Perfetti
                 per Instagram, Facebook, WhatsApp, Fortnite, Brawl Stars e molto altro!
               </p>
+              <AdBanner />  
             </div>
 
            <div className="grid gap-4">
-            {/* <Ad index={1} />
-  <AdMobile index={1} /> */}
+
               {Object.entries(combinedCharMap)
                 .slice(0, visibleFonts)
                 .map(([fontName, fontMap], index) => (
