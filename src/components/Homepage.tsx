@@ -393,7 +393,6 @@ const FancyTextGenerator: React.FC = () => {
           </motion.div>
 
         </div>
-    <div id="ezoic-pub-ad-placeholder-101"></div>
 
       <ToastContainer position="top-right" autoClose={1000} hideProgressBar theme="colored" />
 
