@@ -169,7 +169,6 @@ const FancyTextGenerator: React.FC = () => {
             </div>
 
            <div className="grid gap-4">
-
               {Object.entries(combinedCharMap)
                 .slice(0, visibleFonts)
                 .map(([fontName, fontMap], index) => (
